@@ -8,15 +8,23 @@ function App() {
     job: 'Developer',
     hobbies: ['Sports', 'Cooking']
   };
+  
+  const style = {
+    backgroundColor: 'cyan',
+    font: 'inherit',
+    border: '1px solid blue',
+    padding: '8px',
+    cursor: 'pointer',
+    color: 'black'
+  };
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <p>Starting a new journey with reach</p>
-        <h1>My heading : {2+5}</h1>
+        <p style={style}>Starting a new journey with reach</p>
+        <h1 style={{backgroundColor:'red'}}>My heading : {2+5}</h1>
         <h1>My Name:{person.name}</h1>
         <h1>My Name:{person.job}</h1>
         <a
