@@ -29,6 +29,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <User></User>
         <Counter></Counter>
         {
           nayoks.map(nayok=> console.log(nayok))
@@ -83,6 +84,13 @@ function Counter() {
       <button onMouseMove={()=>setCount(count + 1)}>Increase</button>
       <button onMouseMove={()=>count >=1 && setCount(count - 1)}>Decrease</button>
     </div>
+  )
+}
+// Let's create a user component
+function User() {
+  
+  return(
+    <h1>User Length: </h1>
   )
 }
 // Let's create a person component
