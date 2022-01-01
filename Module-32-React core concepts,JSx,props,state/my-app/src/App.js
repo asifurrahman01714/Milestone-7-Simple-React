@@ -80,8 +80,8 @@ function Counter() {
   return(
     <div>
       <h1>Count: {count}</h1>
-      <button onClick={()=>setCount(count + 1)}>Increase</button>
-      <button onClick={()=>count >=1 && setCount(count - 1)}>Decrease</button>
+      <button onMouseMove={()=>setCount(count + 1)}>Increase</button>
+      <button onMouseMove={()=>count >=1 && setCount(count - 1)}>Decrease</button>
     </div>
   )
 }
