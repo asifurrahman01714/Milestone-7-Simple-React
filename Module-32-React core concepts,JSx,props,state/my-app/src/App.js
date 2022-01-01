@@ -88,7 +88,8 @@ function Counter() {
 }
 // Let's create a user component
 function User() {
-  
+  const [users, setUsers] = useState([]);
+  // Our json place holder user has array of length 10,,, so declaring userState with an empty array as initial value.
   return(
     <h1>User Length: </h1>
   )
