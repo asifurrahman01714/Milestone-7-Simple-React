@@ -92,7 +92,13 @@ function User() {
   // Our json place holder user has array of length 10,,, so declaring userState with an empty array as initial value.
   useEffect(() => {
     console.log("Using useEffect");
-  })
+    fetch('https://jsonplaceholder.typicode.com/users')
+    .then(res=> res.json())
+    .then(data=> {
+      console.log(data);
+      setUsers(data)
+    })
+  },[])
   return(
     <h1>User Length: </h1>
   )
