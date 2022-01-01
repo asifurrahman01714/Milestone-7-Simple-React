@@ -61,10 +61,11 @@ function Person(){
 
 function Modeling(props) {
   console.log(props);
+  const {nayok, nayika}=props;
   return(
     <div>
-      <h1>Nayok: {props.nayok}</h1>
-      <h1>Nayok: {props.nayika}</h1>
+      <h1>Nayok: {nayok}</h1>
+      <h1>Nayok: {nayika}</h1>
     </div>
   );
 }
