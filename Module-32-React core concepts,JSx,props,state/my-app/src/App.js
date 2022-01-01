@@ -26,9 +26,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Product singleProduct={products[0]}></Product>
-        <Product singleProduct={products[1]}></Product>
-        <Product singleProduct={products[2]}></Product>
+        {
+          products.map(product=><Product singleProduct={product}></Product>)
+        }
         <Person></Person>
         <Modeling nayok={nayoks[0]} nayika="Mousumi"></Modeling>
         <Modeling nayok={nayoks[1]} nayika="Shabana"></Modeling>
