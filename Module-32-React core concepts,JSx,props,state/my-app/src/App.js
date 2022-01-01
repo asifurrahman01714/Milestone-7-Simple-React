@@ -21,6 +21,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Person></Person>
+        <Modeling nayok="Rubel" nayika="Mousumi"></Modeling>
+        <Modeling nayok="Alamgir" nayika="Shabana"></Modeling>
+        <Modeling nayok="Bapparaz" nayika="Cheka"></Modeling>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -55,11 +58,11 @@ function Person(){
   );
 }
 
-function Modeling(params) {
+function Modeling(props) {
   return(
     <div>
-      <h1>Nayok: {params.nayok}</h1>
-      <h1>Nayok: {params.nayika}</h1>
+      <h1>Nayok: {props.nayok}</h1>
+      <h1>Nayok: {props.nayika}</h1>
     </div>
   );
 }
