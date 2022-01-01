@@ -66,9 +66,13 @@ function App() {
 // Let's create a counter component$0'
 function Counter() {
   const [count, setCount] = useState(0);
+  const handleIncrease = ()=>{
+    console.log('Handle clicked')
+  }
   return(
     <div>
       <h1>Count: {count}</h1>
+      <button onClick={handleIncrease}>Increase</button>
     </div>
   )
 }
