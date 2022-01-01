@@ -68,6 +68,8 @@ function Counter() {
   const [count, setCount] = useState(0);
   const handleIncrease = ()=>{
     console.log('Handle clicked')
+    const newCount = count + 1;
+    setCount(newCount);
   }
   return(
     <div>
