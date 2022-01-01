@@ -50,6 +50,7 @@ function Person(){
     border: '5px solid blue',
     margin:'10px'
   }
+  
   return(
     <div style={personStyle}>
       <h1>My name is : Asif Ur Rahman</h1>
@@ -59,6 +60,7 @@ function Person(){
 }
 
 function Modeling(props) {
+  console.log(props);
   return(
     <div>
       <h1>Nayok: {props.nayok}</h1>
