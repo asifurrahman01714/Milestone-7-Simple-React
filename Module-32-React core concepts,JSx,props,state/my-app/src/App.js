@@ -20,6 +20,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <Person></Person>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -42,8 +43,12 @@ function App() {
 
 // Let's create a person component
 function Person(){
+  const personStyle={
+    border: '5px solid blue',
+    margin:'10px'
+  }
   return(
-    <div>
+    <div style={personStyle}>
       <h1>My name is : Asif Ur Rahman</h1>
       <h1>My age is : 23</h1>
     </div>
