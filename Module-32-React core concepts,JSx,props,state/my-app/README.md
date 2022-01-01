@@ -9,3 +9,10 @@
       "javascript": "javascriptreact"
    }
 ```
+
+### How To declare a component in react?
+```bash
+every function is component in react. To create a component you have to follow these two things:
+1. Declare a function and give a name with uppercase
+2. call this function in anywhere like a tag or element.
+```
