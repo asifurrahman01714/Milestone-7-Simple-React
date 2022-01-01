@@ -21,6 +21,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <Product name="PhotoShop" price="$100"></Product>
         <Person></Person>
         <Modeling nayok={nayoks[0]} nayika="Mousumi"></Modeling>
         <Modeling nayok={nayoks[1]} nayika="Shabana"></Modeling>
@@ -59,6 +60,7 @@ function Person(){
     </div>
   );
 }
+// Let's create a modeling component
 
 function Modeling(props) {
   console.log(props);
@@ -67,6 +69,15 @@ function Modeling(props) {
     <div>
       <h1>Nayok: {nayok}</h1>
       <h1>Nayok: {nayika}</h1>
+    </div>
+  );
+}
+// Let's create a product component
+function Product(props) {
+  return(
+    <div>
+      <h2>Product Name:{props.name}</h2>
+      <h2>Product Price:{props.price}</h2>
     </div>
   );
 }
