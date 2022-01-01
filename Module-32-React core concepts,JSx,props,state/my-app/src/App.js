@@ -18,10 +18,17 @@ function App() {
     color: 'black'
   };
   const nayoks = ['a', 'b', 'c', 'd', 'e', 'f'];
+  const products = [
+    {name: 'PhotoShop', price:"$100"},
+    {name: 'Illustrator', price:"$70"},
+    {name: 'Debut', price:"$200"},
+  ]
   return (
     <div className="App">
       <header className="App-header">
-        <Product name="PhotoShop" price="$100"></Product>
+        <Product singleProduct={products[0]}></Product>
+        <Product singleProduct={products[1]}></Product>
+        <Product singleProduct={products[2]}></Product>
         <Person></Person>
         <Modeling nayok={nayoks[0]} nayika="Mousumi"></Modeling>
         <Modeling nayok={nayoks[1]} nayika="Shabana"></Modeling>
@@ -63,7 +70,7 @@ function Person(){
 // Let's create a modeling component
 
 function Modeling(props) {
-  console.log(props);
+  // console.log(props);
   const {nayok, nayika}=props;
   return(
     <div>
@@ -74,10 +81,17 @@ function Modeling(props) {
 }
 // Let's create a product component
 function Product(props) {
+  console.log(props.singleProduct);
+  const {name, price} = props.singleProduct;
+  const productStyle ={
+    backgroundColor:'gray',
+    border:'1px solid blue',
+    borderRadius:'15px'
+  }
   return(
-    <div>
-      <h2>Product Name:{props.name}</h2>
-      <h2>Product Price:{props.price}</h2>
+    <div style={productStyle}>
+      <h2>Product Name:{name}</h2>
+      <h2>Product Price:{price}</h2>
     </div>
   );
 }
