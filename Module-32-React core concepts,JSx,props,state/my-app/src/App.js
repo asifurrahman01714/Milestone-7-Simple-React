@@ -40,4 +40,13 @@ function App() {
   );
 }
 
+// Let's create a person component
+function Person(){
+  return(
+    <div>
+      <h1>My name is : Asif Ur Rahman</h1>
+      <h1>My age is : 23</h1>
+    </div>
+  );
+}
 export default App;
