@@ -70,11 +70,16 @@ function Counter() {
     console.log('Handle clicked')
     const newCount = count + 1;
     setCount(newCount);
+  };
+  const handleDecrease =()=>{
+    const newCount = count - 1;
+    newCount >=0 && setCount(newCount);
   }
   return(
     <div>
       <h1>Count: {count}</h1>
       <button onClick={handleIncrease}>Increase</button>
+      <button onClick={handleDecrease}>Decrease</button>
     </div>
   )
 }
