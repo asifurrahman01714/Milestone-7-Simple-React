@@ -18,6 +18,8 @@ function App() {
     color: 'black'
   };
   const nayoks = ['a', 'b', 'c', 'd', 'e', 'f'];
+  const nayokNames = nayoks.map(nayok => nayok);
+  console.log(nayokNames);
   const products = [
     {name: 'PhotoShop', price:"$100"},
     {name: 'Illustrator', price:"$70"},
@@ -27,7 +29,10 @@ function App() {
     <div className="App">
       <header className="App-header">
         {
-          products.map(product=><Product singleProduct={product}></Product>)
+          nayoks.map(nayok=> console.log(nayok))
+        }
+        {
+          products.map(product =><Product singleProduct={product}></Product>)
         }
         <Person></Person>
         <Modeling nayok={nayoks[0]} nayika="Mousumi"></Modeling>
