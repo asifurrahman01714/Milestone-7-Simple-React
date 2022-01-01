@@ -17,13 +17,14 @@ function App() {
     cursor: 'pointer',
     color: 'black'
   };
+  const nayoks = ['a', 'b', 'c', 'd', 'e', 'f'];
   return (
     <div className="App">
       <header className="App-header">
         <Person></Person>
-        <Modeling nayok="Rubel" nayika="Mousumi"></Modeling>
-        <Modeling nayok="Alamgir" nayika="Shabana"></Modeling>
-        <Modeling nayok="Bapparaz" nayika="Cheka"></Modeling>
+        <Modeling nayok={nayoks[0]} nayika="Mousumi"></Modeling>
+        <Modeling nayok={nayoks[1]} nayika="Shabana"></Modeling>
+        <Modeling nayok={nayoks[2]} nayika="Cheka"></Modeling>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
