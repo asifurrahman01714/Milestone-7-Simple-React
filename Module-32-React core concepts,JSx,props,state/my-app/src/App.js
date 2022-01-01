@@ -54,4 +54,13 @@ function Person(){
     </div>
   );
 }
+
+function Modeling(params) {
+  return(
+    <div>
+      <h1>Nayok: {params.nayok}</h1>
+      <h1>Nayok: {params.nayika}</h1>
+    </div>
+  );
+}
 export default App;
