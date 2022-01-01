@@ -100,7 +100,12 @@ function User() {
     })
   },[]) // Avoiding auto load use the empty array in useEffect
   return(
-    <h1>User Length:{users.length} </h1>
+    <div>
+      <h1>User Length:{users.length} </h1>
+    {
+      users.map(user =><li>{user.name}</li>)
+    }
+    </div>
   )
 }
 // Let's create a person component
