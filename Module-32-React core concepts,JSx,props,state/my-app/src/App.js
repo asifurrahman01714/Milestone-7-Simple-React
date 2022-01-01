@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import { useState } from 'react/cjs/react.development';
+import { useState,useEffect } from 'react/cjs/react.development';
 
 function App() {
   const person = {
@@ -90,6 +90,9 @@ function Counter() {
 function User() {
   const [users, setUsers] = useState([]);
   // Our json place holder user has array of length 10,,, so declaring userState with an empty array as initial value.
+  useEffect(() => {
+    console.log("Using useEffect");
+  })
   return(
     <h1>User Length: </h1>
   )
