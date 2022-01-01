@@ -98,9 +98,9 @@ function User() {
       console.log(data);
       setUsers(data)
     })
-  },[])
+  },[]) // Avoiding auto load use the empty array in useEffect
   return(
-    <h1>User Length: </h1>
+    <h1>User Length:{users.length} </h1>
   )
 }
 // Let's create a person component
