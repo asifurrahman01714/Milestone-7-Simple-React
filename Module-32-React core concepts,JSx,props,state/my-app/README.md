@@ -22,3 +22,9 @@ every function is component in react. To create a component you have to follow t
 1. https://www.w3schools.com/react/react_events.asp
 2. https://reactjs.org/docs/handling-events.html
 ```
+
+### Interview questions on react
+```bash
+1. What is the difference between state and props?
+2. How react works?
+```
