@@ -28,3 +28,8 @@ every function is component in react. To create a component you have to follow t
 1. What is the difference between state and props?
 2. How react works?
 ```
+### What is react?
+```bash
+1. React is a JavaScript library for building user interfaces.
+
+```
