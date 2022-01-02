@@ -51,14 +51,7 @@ function App() {
         <h1 style={{backgroundColor:'red'}}>My heading : {2+5}</h1>
         <h1>My Name:{person.name}</h1>
         <h1>My Name:{person.job}</h1>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        
       </header>
     </div>
   );
