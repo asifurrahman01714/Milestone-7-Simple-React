@@ -68,6 +68,14 @@ function MovieCounter() {
       <h1>Total movies: {count}</h1>
       <button onClick={handleClick}>Add Movie</button>
       <button onClick={()=> {count >=1 && setCount(count-1)}}>Decrement</button>
+      <MovieDisplay count={count}></MovieDisplay>
+    </div>
+  );
+}
+const MovieDisplay = (props) => {
+  return (
+    <div>
+      <h1>Movie Display:{props.count}</h1>
     </div>
   );
 }
