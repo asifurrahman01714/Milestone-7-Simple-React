@@ -16,3 +16,9 @@ every function is component in react. To create a component you have to follow t
 1. Declare a function and give a name with uppercase
 2. call this function in anywhere like a tag or element.
 ```
+
+### See react event from these articles
+```bash
+1. https://www.w3schools.com/react/react_events.asp
+2. https://reactjs.org/docs/handling-events.html
+```
