@@ -65,8 +65,8 @@ function MovieCounter() {
   }
   return (
     <div>
-      <h1>Add Movie: {count}</h1>
-      <button onClick={handleClick}>Increment</button>
+      <h1>Total movies: {count}</h1>
+      <button onClick={handleClick}>Add Movie</button>
       <button onClick={()=> {count >=1 && setCount(count-1)}}>Decrement</button>
     </div>
   );

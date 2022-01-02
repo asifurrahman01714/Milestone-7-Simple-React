@@ -55,3 +55,8 @@ Since component logic is written in JavaScript instead of templates, you can eas
 1. Library is like a shop with same things. And library is a shopping mall with many single shop.
 2. Library is small than framework. And there is no restriction on using other things in a library. But a framework may have some restrictions on some things. Like if you use router in an angular project, you have to must use the router of the angular.
 ```
+
+### Why you will use props?
+```bash
+we will use props to pass data to components
+```
