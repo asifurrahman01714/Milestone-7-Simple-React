@@ -65,3 +65,8 @@ Since component logic is written in JavaScript instead of templates, you can eas
 ```bash
 1. we will use useState to change data from one state to another
 ```
+
+### Why you will use useEffect?
+```bash
+1. we will use useEffect to load data from server or API.
+```
