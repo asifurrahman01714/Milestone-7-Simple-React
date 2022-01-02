@@ -2,60 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import { useState,useEffect } from 'react/cjs/react.development';
 
-function App() {
-  const person = {
-    name: 'Asif Ur Rahman',
-    age: 29,
-    job: 'Developer',
-    hobbies: ['Sports', 'Cooking']
-  };
-  
-  const style = {
-    backgroundColor: 'cyan',
-    font: 'inherit',
-    border: '1px solid blue',
-    padding: '8px',
-    cursor: 'pointer',
-    color: 'black'
-  };
-  const nayoks = ['a', 'b', 'c', 'd', 'e', 'f'];
-  const nayokNames = nayoks.map(nayok => nayok);
-  console.log(nayokNames);
-  const products = [
-    {name: 'PhotoShop', price:"$100"},
-    {name: 'Illustrator', price:"$70"},
-    {name: 'Debut', price:"$200"},
-  ]
-  return (
-    <div className="App">
-      <header className="App-header">
-        <User></User>
-        <Counter></Counter>
-        {
-          nayoks.map(nayok=> console.log(nayok))
-        }
-        {
-          products.map(product=> <li>{product.name}</li>)
-        }
-        {
-          products.map(product =><Product singleProduct={product}></Product>)
-        }
-        <Person></Person>
-        <Modeling nayok={nayoks[0]} nayika="Mousumi"></Modeling>
-        <Modeling nayok={nayoks[1]} nayika="Shabana"></Modeling>
-        <Modeling nayok={nayoks[2]} nayika="Cheka"></Modeling>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <p style={style}>Starting a new journey with reach</p>
-        <h1 style={{backgroundColor:'red'}}>My heading : {2+5}</h1>
-        <h1>My Name:{person.name}</h1>
-        <h1>My Name:{person.job}</h1>
-        
-      </header>
-    </div>
-  );
-}
+
 
 // Let's create a counter component$0'
 const Counter = () => {
