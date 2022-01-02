@@ -58,7 +58,7 @@ function App() {
 }
 
 // Let's create a counter component$0'
-function Counter() {
+const Counter = () => {
   const [count, setCount] = useState(0);
   const handleIncrease = ()=>{
     console.log('Handle clicked')
