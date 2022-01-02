@@ -29,6 +29,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <MovieCounter />
         <User></User>
         <Counter></Counter>
         {
@@ -56,6 +57,21 @@ function App() {
     </div>
   );
 }
+// Let's create a counter component named movieCounter'
+function MovieCounter() {
+  const [count, setCount] = useState(0);
+  const handleClick = () => {
+    setCount(count + 1);
+  }
+  return (
+    <div>
+      <h1>Add Movie: {count}</h1>
+      <button onClick={handleClick}>Increment</button>
+      <button onClick={()=> {count >=1 && setCount(count-1)}}>Decrement</button>
+    </div>
+  );
+}
+
 
 // Let's create a counter component$0'
 const Counter = () => {
