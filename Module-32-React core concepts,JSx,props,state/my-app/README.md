@@ -35,3 +35,10 @@ every function is component in react. To create a component you have to follow t
 3. React is component-based, which means that the UI is built using components.
 
 ```
+### Declarative
+```bash
+1. React is declarative.
+React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.
+
+Declarative views make your code more predictable and easier to debug.
+```
