@@ -58,5 +58,10 @@ Since component logic is written in JavaScript instead of templates, you can eas
 
 ### Why you will use props?
 ```bash
-we will use props to pass data to components
+1. we will use props to pass data to components
+```
+
+### Why you will use useState?
+```bash
+1. we will use useState to change data from one state to another
 ```
