@@ -31,5 +31,7 @@ every function is component in react. To create a component you have to follow t
 ### What is react?
 ```bash
 1. React is a JavaScript library for building user interfaces.
+2. React is declarative, which means that it describes the UI as a tree of nested elements, rather than as a sequence of instructions.
+3. React is component-based, which means that the UI is built using components.
 
 ```
