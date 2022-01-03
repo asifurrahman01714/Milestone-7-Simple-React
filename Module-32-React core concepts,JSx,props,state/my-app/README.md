@@ -66,7 +66,13 @@ Since component logic is written in JavaScript instead of templates, you can eas
 1. we will use useState to change data from one state to another
 ```
 
-### Why you will use useEffect?
+### How react work?
 ```bash
-1. we will use useEffect to load data from server or API.
+React works on the basis of three things-
+1. virtual DOM- at first react create a virtual DOM of the whole page.
+2. diff algorithm- it compare the virtual DOM with the real DOM.
+3. real DOM- it replace the virtual DOM with the real DOM.
+4. then the real DOM will be rendered to the screen.
 ```
+
+
