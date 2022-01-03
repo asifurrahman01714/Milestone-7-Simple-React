@@ -1,0 +1,8 @@
+.shopContainer {
+    display:flex;
+}
+.productContainer {
+    margin: 0 5px 0 20px;
+    width: 70%;
+    border-right: 2px solid lightgray;
+}

@@ -1,6 +1,8 @@
 import React from 'react';
 import { useEffect } from 'react/cjs/react.development';
 import fakeData from '../../fakeData/products.JSON';
+import Product from '../Product/Product';
+import './shop.css';
 const Shop = () => {
     const [products, setProducts] = React.useState([]);
     useEffect(() => {
@@ -14,9 +16,7 @@ const Shop = () => {
     return (
         <div className="shopContainer">
             <div className="productContainer">
-                <ul>
-                    {products.slice(0,10).map(product => <li>{product.name}</li>)}
-                </ul>
+                    {products.slice(0,10).map(product => <Product key={product.key} pd={product}/>)}
             </div>
             <div className="cartContainer">
                 <h1>This is cart</h1>

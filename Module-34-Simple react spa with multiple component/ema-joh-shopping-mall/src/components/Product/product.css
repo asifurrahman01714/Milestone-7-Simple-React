@@ -1,0 +1,18 @@
+.singleProduct{
+    display:flex;
+    overflow:hidden;
+    border-bottom:1px solid lightgray;
+}
+.singleProductImage{
+    margin-right: 15px;
+}
+.singleProductContent a{
+    text-decoration: none;
+}
+.singleProductContent button{
+    background-color: rgb(247, 247, 65);
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+
+}
