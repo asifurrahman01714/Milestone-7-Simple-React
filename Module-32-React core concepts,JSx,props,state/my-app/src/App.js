@@ -62,12 +62,17 @@ function App() {
 const RandomUser = () => {
   const [user, setUser] = useState({});
   useEffect(() => {
+  const timer = setInterval(() => {
+    console.log('This will run after 1 second!')
     fetch('https://randomuser.me/api/')
-    .then(res=> res.json())
-    .then(data=> {
-      console.log(data.results[0].name);
-      setUser(data.results[0].name);
-    })
+      .then(res=> res.json())
+      .then(data=> {
+        console.log(data.results[0].name);
+        setUser(data.results[0].name);
+      })
+  }, 1000);
+  return () => clearInterval(timer);
+
   },[])
   return(
     <div>
@@ -75,6 +80,7 @@ const RandomUser = () => {
     </div>
   )
   }
+ 
 // Let's create a counter component named movieCounter'
 function MovieCounter() {
   const [count, setCount] = useState(0);
