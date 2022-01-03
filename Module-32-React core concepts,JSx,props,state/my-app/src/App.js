@@ -20,7 +20,7 @@ function App() {
   };
   const nayoks = ['a', 'b', 'c', 'd', 'e', 'f'];
   const nayokNames = nayoks.map(nayok => nayok);
-  console.log(nayokNames);
+  // console.log(nayokNames);
   const products = [
     {name: 'PhotoShop', price:"$100"},
     {name: 'Illustrator', price:"$70"},
@@ -29,11 +29,12 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <RandomUser></RandomUser>
         <MovieCounter />
         <User></User>
         <Counter></Counter>
         {
-          nayoks.map(nayok=> console.log(nayok))
+          // nayoks.map(nayok=> console.log(nayok))
         }
         {
           products.map(product=> <li>{product.name}</li>)
@@ -57,6 +58,22 @@ function App() {
     </div>
   );
 }
+// Let's create a counter component named randomUser'
+const RandomUser = () => {
+  const [user, setUser] = useState({});
+  useEffect(() => {
+    fetch('https://randomuser.me/api/')
+    .then(res=> res.json())
+    .then(data=> {
+      console.log(data);
+    })
+  },[])
+  return(
+    <div>
+      <h1>My Name is :{}</h1>
+    </div>
+  )
+  }
 // Let's create a counter component named movieCounter'
 function MovieCounter() {
   const [count, setCount] = useState(0);
@@ -87,7 +104,7 @@ const MovieDisplay = (props) => {
 const Counter = () => {
   const [count, setCount] = useState(0);
   const handleIncrease = ()=>{
-    console.log('Handle clicked')
+    // console.log('Handle clicked')
     // const newCount = count + 1;
     // setCount(newCount);
     setCount(count + 1);
@@ -110,11 +127,11 @@ function User() {
   const [users, setUsers] = useState([]);
   // Our json place holder user has array of length 10,,, so declaring userState with an empty array as initial value.
   useEffect(() => {
-    console.log("Using useEffect");
+    // console.log("Using useEffect");
     fetch('https://jsonplaceholder.typicode.com/users')
     .then(res=> res.json())
     .then(data=> {
-      console.log(data);
+      // console.log(data);
       setUsers(data)
     })
   },[]) // Avoiding auto load use the empty array in useEffect
@@ -155,7 +172,7 @@ function Modeling(props) {
 }
 // Let's create a product component
 function Product(props) {
-  console.log(props.singleProduct);
+  // console.log(props.singleProduct);
   const {name, price} = props.singleProduct;
   const productStyle ={
     backgroundColor:'gray',
