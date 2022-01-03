@@ -12,11 +12,16 @@ const Shop = () => {
     }, []);
     console.log(products.slice(0,10));
     return (
-        <div>
-            <h1>This is shop</h1>
-            <ul>
-                {products.slice(0,10).map(product => <li>{product.name}</li>)}
-            </ul>
+        <div className="shopContainer">
+            <div className="productContainer">
+                <ul>
+                    {products.slice(0,10).map(product => <li>{product.name}</li>)}
+                </ul>
+            </div>
+            <div className="cartContainer">
+                <h1>This is cart</h1>
+            </div>
+            
         </div>
     );
 };
