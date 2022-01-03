@@ -65,12 +65,13 @@ const RandomUser = () => {
     fetch('https://randomuser.me/api/')
     .then(res=> res.json())
     .then(data=> {
-      console.log(data);
+      console.log(data.results[0].name);
+      setUser(data.results[0].name);
     })
   },[])
   return(
     <div>
-      <h1>My Name is :{}</h1>
+      <h1>My Name is :{`${user.title} ${user.first} ${user.last}`}</h1>
     </div>
   )
   }
