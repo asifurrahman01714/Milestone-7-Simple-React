@@ -12,7 +12,10 @@ const Shop = () => {
             setProducts(data);
         })
     }, []);
-    console.log(products.slice(0,10));
+    const handleAddProduct = (product) => {
+        console.log(product);
+    }
+    // console.log(products.slice(0,10));
     return (
         <div className="shopContainer">
             <div className="productContainer">
