@@ -8,13 +8,15 @@ const Country = (props) => {
         margin: '10px',
         textAlign: 'center'
     }
-    console.log(props.country.capital?.[0]); // this is called optional chaining
+    // console.log(props);
+    // console.log(props.country.capital?.[0]); // this is called optional chaining
     const { name, capital, population, languages, flags } = props.country;
     return (
         <div style={countryStyle}>
             <img style={{height:'50px'}} src={flags.png} alt="" />
             <h1>Name :{name.common}</h1>
             <h1>Capital :{capital?.[0]}</h1>
+            <button onClick={()=>props.addCountries(props.country)}>Add Country</button>
         </div>
     );
 };
