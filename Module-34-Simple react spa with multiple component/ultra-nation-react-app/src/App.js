@@ -12,15 +12,22 @@ function App() {
   const addCountries = (country) => {
     setCart([...cart,country]);
   }
-  const totalPopulation = cart.reduce((totalPopulation,country) => totalPopulation + country.population,0);
-  console.log(cart);
-  const countryAdded = cart.map(country =>country.name.common);
-  console.log(countryAdded);
+  function removeDuplicates(cart) {
+    return cart.filter((item, index) => cart.indexOf(item) === index);
+    }
+console.log(removeDuplicates(cart));
+const newCart = removeDuplicates(cart);
+
+  const totalPopulation = newCart.reduce((totalPopulation,country) => totalPopulation + country.population,0);
+  // console.log(cart);
+  const countryAdded = newCart.map(country =>country.name.common);
+  // console.log(countryAdded);
+  
   return (
     <div>
       <div style={{border:'3px solid lightgray', textAlign:'center'}}>
         <h1>Total countries: {countries.length}</h1>
-        <h2>Add countries: {cart.length}</h2>
+        <h2>Add countries: {newCart.length}</h2>
         <h2>Total population: {totalPopulation}</h2>
         <h2>Country Added: {countryAdded.join(',')}</h2>
       </div>
