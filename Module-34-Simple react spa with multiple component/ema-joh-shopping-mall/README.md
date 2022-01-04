@@ -4,3 +4,10 @@
 2.npm install --save @fortawesome/free-solid-svg-icons
 3.npm install --save @fortawesome/react-fontawesome
 ```
+### How to use fontawesome icon in react?
+```bash
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+
+const element = <FontAwesomeIcon icon={faCoffee} />
+```
