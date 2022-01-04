@@ -8,19 +8,29 @@ const Cart = (props) => {
         const product = cart[i];
         total = total + product.price;
     }
-    const tax = (total / 10).toFixed(2); 
-    const grandTotal = total + tax;
     const fixedNumber = (number) => {
         return Number(number.toFixed(2)); // If you toFixed, the number will be string
     }
+    const tax = fixedNumber(total * 0.1); 
+    const grandTotal = fixedNumber(total + tax);
+
+    let shipping = 0;
+    if (total>200) {
+        shipping = 0;
+    } else if (total>100) {
+        shipping = 4.99;
+    } else if (total>0) {
+        shipping = 12.99;
+    }
+
     return (
         <div>
             <h1>This is cart</h1>
             <h5>Order summery: {cart.length}</h5>
-            <h2>Product Price:{total}</h2>
-            <h2>Shipping Cost:</h2>
-            <h2>10% Vat + Tax:{tax}</h2>
-            <h2>Total:{grandTotal}</h2>
+            <h4>Product Price: {total}</h4>
+            <h4>Shipping Cost: {fixedNumber(shipping)}</h4>
+            <h4>10% Vat + Tax: {tax}</h4>
+            <h4>Total:{grandTotal}</h4>
         </div>
     );
 };
