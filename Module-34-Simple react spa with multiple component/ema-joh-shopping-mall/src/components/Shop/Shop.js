@@ -13,7 +13,7 @@ const Shop = () => {
         })
     }, []);
     const handleAddProduct = (product) => {
-        console.log(product);
+        console.log('Product added', product);
     }
     // console.log(products.slice(0,10));
     return (
