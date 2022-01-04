@@ -5,6 +5,7 @@ import Product from '../Product/Product';
 import './shop.css';
 const Shop = () => {
     const [products, setProducts] = React.useState([]);
+    const [cart, setCart] = React.useState([]);
     useEffect(() => {
         fetch(fakeData)
         .then(res => res.json())
@@ -23,6 +24,7 @@ const Shop = () => {
             </div>
             <div className="cartContainer">
                 <h1>This is cart</h1>
+                <h5>Order summery: {cart.length}</h5>
             </div>
             
         </div>
