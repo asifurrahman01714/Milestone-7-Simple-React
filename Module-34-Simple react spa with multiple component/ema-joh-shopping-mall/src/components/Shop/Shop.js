@@ -1,6 +1,7 @@
 import React from 'react';
 import { useEffect } from 'react/cjs/react.development';
 import fakeData from '../../fakeData/products.JSON';
+import Cart from '../Cart/Cart';
 import Product from '../Product/Product';
 import './shop.css';
 const Shop = () => {
@@ -25,8 +26,7 @@ const Shop = () => {
                     {products.slice(0,10).map(product => <Product key={product.key} pd={product} handleAddProduct={handleAddProduct}/>)}
             </div>
             <div className="cartContainer">
-                <h1>This is cart</h1>
-                <h5>Order summery: {cart.length}</h5>
+                <Cart cart={cart}></Cart>
             </div>
             
         </div>
