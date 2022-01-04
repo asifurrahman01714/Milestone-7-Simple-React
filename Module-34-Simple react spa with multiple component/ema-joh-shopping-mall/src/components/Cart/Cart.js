@@ -8,9 +8,11 @@ const Cart = (props) => {
         const product = cart[i];
         total = total + product.price;
     }
-    const tax = (total / 10).toFixed(2); // If you toFixed, the number will be string
+    const tax = (total / 10).toFixed(2); 
     const grandTotal = total + tax;
-
+    const fixedNumber = (number) => {
+        return Number(number.toFixed(2)); // If you toFixed, the number will be string
+    }
     return (
         <div>
             <h1>This is cart</h1>
