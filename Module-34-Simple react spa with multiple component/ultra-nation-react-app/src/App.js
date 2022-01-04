@@ -12,7 +12,7 @@ function App() {
     <div>
       <h1>Total countries: {countries.length}</h1>
       {
-        countries.map(country => <Country></Country>)
+        countries.map(country => <Country country={country}></Country>)
       }
     </div>
   );
