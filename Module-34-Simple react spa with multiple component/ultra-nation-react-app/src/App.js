@@ -16,15 +16,15 @@ function App() {
   function removeDuplicates(cart) {
     return cart.filter((item, index) => cart.indexOf(item) === index);
     }
-console.log(removeDuplicates(cart));
-const newCart = removeDuplicates(cart);
+  console.log(removeDuplicates(cart));
+  const newCart = removeDuplicates(cart);
 
   
   return (
     <div>
       <div style={{border:'3px solid lightgray', textAlign:'center'}}>
-
-        <Cart countries={countries} newCart={newCart}></Cart>
+        <h1>Total Countries: {countries.length}</h1>
+        <Cart newCart={newCart}></Cart>
       </div>
       <div style={{display:'grid', gridTemplateColumns: 'auto auto'}}>
         {
