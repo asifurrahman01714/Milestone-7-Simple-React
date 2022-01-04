@@ -19,9 +19,11 @@ function App() {
       <h1>Total countries: {countries.length}</h1>
       <h2>Add countries: {cart.length}</h2>
       <h2>Total population: {totalPopulation}</h2>
-      {
-        countries.map(country => <Country addCountries={addCountries} country={country} key={country.name.common}></Country>)
-      }
+      <div style={{display:'grid', gridTemplateColumns: 'auto auto auto auto'}}>
+        {
+          countries.map(country => <Country addCountries={addCountries} country={country} key={country.name.common}></Country>)
+        }
+      </div>
     </div>
   );
 }
