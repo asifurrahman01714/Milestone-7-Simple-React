@@ -1,5 +1,6 @@
 import React from 'react';
 import {useState,useEffect} from 'react';
+import Cart from './components/Cart/Cart';
 import Country from './components/Country/Country';
 function App() {
   const [countries, setCountries] = useState([]);
@@ -26,10 +27,8 @@ const newCart = removeDuplicates(cart);
   return (
     <div>
       <div style={{border:'3px solid lightgray', textAlign:'center'}}>
-        <h1>Total countries: {countries.length}</h1>
-        <h2>Add countries: {newCart.length}</h2>
-        <h2>Total population: {totalPopulation}</h2>
-        <h2>Country Added: {countryAdded.join(',')}</h2>
+
+        <Cart countries={countries} newCart={newCart} totalPopulation={totalPopulation} countryAdded={countryAdded}></Cart>
       </div>
       <div style={{display:'grid', gridTemplateColumns: 'auto auto'}}>
         {
