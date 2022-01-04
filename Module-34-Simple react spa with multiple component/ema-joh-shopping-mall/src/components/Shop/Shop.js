@@ -19,7 +19,7 @@ const Shop = () => {
     return (
         <div className="shopContainer">
             <div className="productContainer">
-                    {products.slice(0,10).map(product => <Product key={product.key} pd={product}/>)}
+                    {products.slice(0,10).map(product => <Product key={product.key} pd={product} handleAddProduct={handleAddProduct}/>)}
             </div>
             <div className="cartContainer">
                 <h1>This is cart</h1>
