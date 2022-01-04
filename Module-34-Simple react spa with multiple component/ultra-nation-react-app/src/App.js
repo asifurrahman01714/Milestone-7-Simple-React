@@ -1,5 +1,6 @@
 import React from 'react';
 import {useState,useEffect} from 'react';
+import Country from './components/Country/Country';
 function App() {
   const [countries, setCountries] = useState([]);
   useEffect(() => {
@@ -11,7 +12,7 @@ function App() {
     <div>
       <h1>Total countries: {countries.length}</h1>
       {
-        countries.map(country => <li key={country.name.common}>{country.name.common}</li>)
+        countries.map(country => <Country></Country>)
       }
     </div>
   );
