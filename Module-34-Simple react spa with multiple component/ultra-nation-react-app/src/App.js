@@ -10,6 +10,9 @@ function App() {
   return (
     <div>
       <h1>Total countries: {countries.length}</h1>
+      {
+        countries.map(country => <li key={country.name.common}>{country.name.common}</li>)
+      }
     </div>
   );
 }
