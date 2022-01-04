@@ -19,16 +19,12 @@ function App() {
 console.log(removeDuplicates(cart));
 const newCart = removeDuplicates(cart);
 
-  const totalPopulation = newCart.reduce((totalPopulation,country) => totalPopulation + country.population,0);
-  // console.log(cart);
-  const countryAdded = newCart.map(country =>country.name.common);
-  // console.log(countryAdded);
   
   return (
     <div>
       <div style={{border:'3px solid lightgray', textAlign:'center'}}>
 
-        <Cart countries={countries} newCart={newCart} totalPopulation={totalPopulation} countryAdded={countryAdded}></Cart>
+        <Cart countries={countries} newCart={newCart}></Cart>
       </div>
       <div style={{display:'grid', gridTemplateColumns: 'auto auto'}}>
         {
