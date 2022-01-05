@@ -9,6 +9,11 @@ const Home = () => {
         setPlayers(playerData);
     },[])
     console.log(players);
+    const handleAddPlayer = (player) => {
+        const newPlayer = [...players, player];
+        setPlayers(newPlayer);
+        console.log('added new player')
+    }
     return (
         <>
             <div className="container" style={{marginTop: '10px'}}>
@@ -16,7 +21,7 @@ const Home = () => {
                     <div className="col-md-9" style={{borderRight: '3px solid lightgray'}}>
                         <div className="row">
                             {
-                                players.map(player => <Player key={player.id} player={player}></Player>)
+                                players.map(player => <Player key={player.id} player={player} handleAddPlayer={handleAddPlayer}></Player>)
                             }
                         </div>
                     </div>
