@@ -75,4 +75,10 @@ React works on the basis of three things-
 4. then the real DOM will be rendered to the screen.
 ```
 
+### How to generate json data?
+```bash
+Go through these sites:
+1. https://www.mockaroo.com/
+```
+
 
