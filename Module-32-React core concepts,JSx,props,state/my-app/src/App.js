@@ -4,11 +4,13 @@ import fakeDataJson from './fakeData/data.json';
 import fakeDataJs from './fakeData/data.js';
 
 function App() {
+  const [fakePerson, setFakePerson] = useState([]);
   useEffect(() => {
     console.log('fakeDataJson');
     console.log(fakeDataJson);
     console.log('fakeDataJs');
     console.log(fakeDataJs);
+    setFakePerson(fakeDataJs);
   },[])
   const person = {
     name: 'Asif Ur Rahman',
@@ -36,6 +38,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <h2>FakePerson : {fakePerson.length}</h2>
+        {
+          fakePerson.map(person => <li>{`${person.first_name} ${person.first_name}`}</li>)
+        }
         <RandomUser></RandomUser>
         <MovieCounter />
         <User></User>
