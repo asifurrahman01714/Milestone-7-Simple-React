@@ -8,7 +8,7 @@ const Cart = (props) => {
         const element = newPlayers[i].salary;
         total = total + Number(element.replace(/[^0-9.-]+/g,""));  
     }
-    
+    total = Number((total).toFixed(2));
     return (
         <div>
             <h3 style={{textAlign: 'center'}}>Total Players :{newPlayers.length}</h3>
@@ -25,7 +25,7 @@ const Cart = (props) => {
                     }
                     <tr>
                         <th scope="col">Total Salary: </th>
-                        <th scope="col">{0 || total}</th>
+                        <th scope="col">${0 || total}</th>
                     </tr>
                 </tbody>
             </table>

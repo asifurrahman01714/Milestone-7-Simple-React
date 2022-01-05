@@ -22,7 +22,7 @@ const Home = () => {
     
     return (
         <>
-            <div className="container" style={{marginTop: '10px'}}>
+            <div className="container-fluid" style={{marginTop: '10px'}}>
                 <div className="row">
                     <div className="col-md-9" style={{borderRight: '3px solid lightgray'}}>
                         <div className="row">
