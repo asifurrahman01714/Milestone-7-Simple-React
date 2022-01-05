@@ -14,7 +14,7 @@ const Home = () => {
         setNewPlayers([...newPlayers, pl])
         console.log('added new player', pl)
     }
-    console.log(newPlayers);
+    // console.log(newPlayers);
     return (
         <>
             <div className="container" style={{marginTop: '10px'}}>
@@ -27,7 +27,7 @@ const Home = () => {
                         </div>
                     </div>
                     <div className="col-md-3">
-                        <Cart></Cart>
+                        <Cart newPlayers={newPlayers}></Cart>
                     </div>
                 </div>
             </div>
