@@ -5,15 +5,16 @@ import playerData from '../../fakeData/teamFakeData.json';
 import { useEffect, useState } from 'react';
 const Home = () => {
     const [players, setPlayers] = useState(playerData);
+    const [newPlayers, setNewPlayers] = useState([]);
     useEffect(() => {
         setPlayers(playerData);
     },[])
-    console.log(players);
-    const handleAddPlayer = (player) => {
-        const newPlayer = [...players, player];
-        setPlayers(newPlayer);
-        console.log('added new player')
+    // console.log(players);
+    const handleAddPlayer = (pl) => {
+        setNewPlayers([...newPlayers, pl])
+        console.log('added new player', pl)
     }
+    console.log(newPlayers);
     return (
         <>
             <div className="container" style={{marginTop: '10px'}}>
