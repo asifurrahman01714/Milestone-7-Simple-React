@@ -9,12 +9,17 @@ const Home = () => {
     useEffect(() => {
         setPlayers(playerData);
     },[])
-    // console.log(players);
     const handleAddPlayer = (pl) => {
         setNewPlayers([...newPlayers, pl])
         console.log('added new player', pl)
     }
-    // console.log(newPlayers);
+
+    //remove removeDuplicates
+    function removeDuplicates(newPlayers) {
+        return newPlayers.filter((item, index) => newPlayers.indexOf(item) === index);
+        }
+    const filteredNewPlayers = removeDuplicates(newPlayers);
+    
     return (
         <>
             <div className="container" style={{marginTop: '10px'}}>
@@ -27,7 +32,7 @@ const Home = () => {
                         </div>
                     </div>
                     <div className="col-md-3">
-                        <Cart newPlayers={newPlayers}></Cart>
+                        <Cart newPlayers={filteredNewPlayers}></Cart>
                     </div>
                 </div>
             </div>
