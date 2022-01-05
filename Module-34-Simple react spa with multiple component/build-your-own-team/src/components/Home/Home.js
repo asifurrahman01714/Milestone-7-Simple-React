@@ -14,9 +14,11 @@ const Home = () => {
             <div className="container" style={{marginTop: '10px'}}>
                 <div className="row">
                     <div className="col-md-9">
-                        {
-                            players.map(player => <Player key={player.id} player={player}></Player>)
-                        }
+                        <div className="row">
+                            {
+                                players.map(player => <Player key={player.id} player={player}></Player>)
+                            }
+                        </div>
                     </div>
                     <div className="col-md-3">
                         <Cart></Cart>
