@@ -1,10 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
 import { useState,useEffect } from 'react/cjs/react.development';
 import fakeDataJson from './fakeData/data.json';
 import fakeDataJs from './fakeData/data.js';
 
 function App() {
+  useEffect(() => {
+    console.log('fakeDataJson');
+    console.log(fakeDataJson);
+    console.log('fakeDataJs');
+    console.log(fakeDataJs);
+  },[])
   const person = {
     name: 'Asif Ur Rahman',
     age: 29,
