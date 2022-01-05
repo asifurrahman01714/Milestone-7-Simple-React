@@ -1,0 +1,9 @@
+.header{
+    margin-top: 20px;
+    text-align:center;
+}
+.header .navbar-brand{
+    font-size: 1.5em;
+    color: rgb(17, 61, 255);
+    font-weight: bold;
+}
