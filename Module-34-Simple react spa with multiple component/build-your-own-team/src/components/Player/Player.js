@@ -3,15 +3,14 @@ import React from 'react';
 const Player = (props) => {
     // console.log(props);
     // console.log(props.player);
-    const {name, image, salary} = props.player;
+    const {name, image} = props.player;
     return (
-        <div className="col-md-6">
-            <div className="card">
-                <img src={image} className="card-img-top" alt="..."/>
-                <div className="card-body">
-                    <h5 className="card-title">Card title</h5>
-                    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" className="btn btn-primary">Go somewhere</a>
+        <div className="col-md-6" style={{marginBottom:'10px'}}>
+            <div className="card" style={{height:'550px'}}>
+                <img src={image} style={{height: '75%'}} className="card-img-top" alt="..."/>
+                <div className="card-body" style={{textAlign: 'center'}}>
+                    <h2 style={{fontWeight: '700', marginBottom:'15px'}} className="card-title">{name}</h2>
+                    <a href="#" className="btn btn-primary">Add me</a>
                 </div>
             </div>
         </div>
