@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import { useState,useEffect } from 'react/cjs/react.development';
+import fakeDataJson from './fakeData/data.json';
+import fakeDataJs from './fakeData/data.js';
 
 function App() {
   const person = {
