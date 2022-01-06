@@ -5,5 +5,8 @@ console.log(result);
 const seeIndex = nums.indexOf(30);
 console.log(seeIndex);
 
-const filterSameValues = nums.filter((num, index) => nums.indexOf(num) === index);
+const filterSameValues = nums.filter((num, index) => {
+    console.log(num, nums.indexOf(num), index)
+    return nums.indexOf(num) === index;
+});
 console.log(filterSameValues);
