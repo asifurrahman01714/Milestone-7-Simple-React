@@ -24,3 +24,14 @@ https://reacttraining.com/react-router/web/guides/quick-start
 ```bash
 npm i react-router-dom
 ```
+
+### Pass dynamic data to react router
+```bash
+1. <h3><Link to={`/product/${key}`}>{name}</Link> </h3>
+    or
+<h3><Link to={"/product/"+ key}}>{name}</Link> </h3>
+
+2. <Route path="/product/:productId">
+            <ProductDetails/>
+    </Route>
+```

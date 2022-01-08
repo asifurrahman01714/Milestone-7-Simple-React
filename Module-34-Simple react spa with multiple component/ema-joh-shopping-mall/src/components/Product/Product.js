@@ -14,7 +14,8 @@ const Product = (props) => {
                 <img src={img} alt=""/>
             </div>
             <div className="singleProductContent">
-                <h3><Link to={`product/${key}`}>{name}</Link> </h3>
+                {/* <h3><Link to={"/product/"+key}>{name}</Link> </h3> */}
+                <h3><Link to={`/product/${key}`}>{name}</Link> </h3>
                 <span>by: {seller}</span>
                 <h3>Price: ${price}</h3>
                 <button onClick={()=>{props.handleAddProduct(props.pd)}}><FontAwesomeIcon icon={faShoppingCart}/> Add to Cart</button>
