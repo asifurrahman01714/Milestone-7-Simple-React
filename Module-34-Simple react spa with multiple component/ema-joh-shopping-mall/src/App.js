@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import Review from "./components/Review/Review";
 import Inventory from "./components/Inventory/Inventory";
+import NoMatch from "./components/NoMatch/NoMatch";
 
 function App() {
   return (
@@ -31,6 +32,9 @@ function App() {
             <Inventory />
           </Route>
 
+          <Route path="*">
+            <NoMatch/>
+          </Route>
         </Switch>
       </Router>
     </div>
