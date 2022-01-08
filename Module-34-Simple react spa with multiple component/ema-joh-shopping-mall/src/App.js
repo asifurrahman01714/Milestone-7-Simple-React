@@ -7,6 +7,7 @@ import {
   Route
 } from "react-router-dom";
 import Review from "./components/Review/Review";
+import Inventory from "./components/Inventory/Inventory";
 
 function App() {
   return (
@@ -14,11 +15,11 @@ function App() {
       <Header />
       <Router>
         <Switch>
-          <Route path="/about">
+          <Route exact path="/">
             <Shop />
           </Route>
-          
-          <Route exact path="/">
+
+          <Route path="/shop">
             <Shop />
           </Route>
 
@@ -26,7 +27,9 @@ function App() {
             <Review />
           </Route>
 
-          
+          <Route path="/inventory">
+            <Inventory />
+          </Route>
 
         </Switch>
       </Router>
