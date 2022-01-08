@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Cart = (props) => {
     const cart = props.cart;
@@ -22,7 +23,13 @@ const Cart = (props) => {
     } else if (total>0) {
         shipping = 12.99;
     }
-
+    const buttonStyle ={
+        backgroundColor: '#ffb547',
+        padding: '5px',
+        borderRadius: '5px',
+        fontWeight: 'bold',
+        cursor: 'pointer'
+    }
     return (
         <div>
             <h1>This is cart</h1>
@@ -31,6 +38,7 @@ const Cart = (props) => {
             <h4>Shipping Cost: {fixedNumber(shipping)}</h4>
             <h4>10% Vat + Tax: {tax}</h4>
             <h4>Total:{grandTotal}</h4>
+            <Link to="/review"><button style={buttonStyle}>Review Order</button></Link>
         </div>
     );
 };
