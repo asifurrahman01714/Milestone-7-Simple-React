@@ -15,14 +15,14 @@ const ProductDetails = () => {
             setProducts(data);
         })
     }, []);
-    const product = fakeData.find(pd => pd.key === productId);
+    const product = products.find(pd => pd.key === productId);
     // console.log(products);
     console.log(product);
 
     return (
         <div>
-            <h1>Product Id :{productId}</h1>
-            <Product product={product}/>
+            <h1>Product Id :{product?.key}</h1>
+            <Product pd ={product}/>
         </div>
     );
 };

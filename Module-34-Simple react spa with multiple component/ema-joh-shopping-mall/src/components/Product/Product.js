@@ -6,7 +6,12 @@ import { Link } from 'react-router-dom';
 
 const Product = (props) => {
     // console.log(props.pd);
-    const {key, name, img, seller,price} = props.pd;
+    // const {key, name, img, seller,price} = props.pd;
+    const key = props.pd?.key;
+    const name = props.pd?.name;
+    const img = props.pd?.img;
+    const seller = props.pd?.seller;
+    const price = props.pd?.price;
     // console.log(props.pd)
     return (
         <div className="singleProduct">
