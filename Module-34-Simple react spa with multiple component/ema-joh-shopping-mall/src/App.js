@@ -33,7 +33,7 @@ function App() {
             <Inventory />
           </Route>
 
-          <Route path="/product/:productId">
+          <Route path="/product/:productId"> {/* This productId is dynamically passed through ProductDetails component */}
             <ProductDetails/>
           </Route>
 
