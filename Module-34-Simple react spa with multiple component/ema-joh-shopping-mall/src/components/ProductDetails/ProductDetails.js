@@ -6,15 +6,15 @@ import fakeData from '../../fakeData/products.JSON';
 const ProductDetails = () => {
     // console.log(useParams());
     const {productId} = useParams();
-    const [products, setProducts] = React.useState([]);
-    useEffect(() => {
-        fetch(fakeData)
-        .then(res => res.json())
-        .then(data => {
-            setProducts(data);
-        })
-    }, []);
-    const product = products.find(pd => pd.key === productId);
+    // const [products, setProducts] = React.useState([]);
+    // useEffect(() => {
+    //     fetch(fakeData)
+    //     .then(res => res.json())
+    //     .then(data => {
+    //         setProducts(data);
+    //     })
+    // }, []);
+    const product = fakeData.find(pd => pd.key === productId);
     // console.log(products);
     console.log(product);
 
