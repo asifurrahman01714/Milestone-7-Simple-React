@@ -4,6 +4,8 @@ import { useEffect, useState } from 'react/cjs/react.development';
 import fakeData from '../../fakeData/products.JSON';
 
 const ProductDetails = () => {
+    // console.log(useParams());
+    const {productId} = useParams();
     const [products, setProducts] = React.useState([]);
     useEffect(() => {
         fetch(fakeData)
@@ -12,12 +14,14 @@ const ProductDetails = () => {
             setProducts(data);
         })
     }, []);
+    const product = products.find(pd => pd.key === productId);
     // console.log(products);
-    // console.log(useParams());
-    const {productId} = useParams();
+    console.log(product);
+
     return (
         <div>
-            <h1>Product Id :{productId}</h1>
+            <h1>Product Id :{product?.key}</h1>
+            <h1>Product Name :{product?.name}</h1>
         </div>
     );
 };
