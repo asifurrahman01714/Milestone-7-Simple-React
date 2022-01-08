@@ -4,6 +4,7 @@ import fakeData from '../../fakeData/products.JSON';
 import Cart from '../Cart/Cart';
 import Product from '../Product/Product';
 import './shop.css';
+import {addToDb} from '../../utilities/fakedb';
 const Shop = () => {
     const [products, setProducts] = React.useState([]);
     const [cart, setCart] = React.useState([]);
@@ -18,7 +19,9 @@ const Shop = () => {
         console.log('Product added', product);
         const newCart = [...cart, product];
         setCart(newCart);
+        addToDb(product.key, 1);
     }
+    
     // console.log(products.slice(0,10));
     return (
         <div className="shopContainer">

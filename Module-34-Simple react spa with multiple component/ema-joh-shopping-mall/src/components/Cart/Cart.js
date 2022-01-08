@@ -34,7 +34,7 @@ const Cart = (props) => {
         <div>
             <h1>This is cart</h1>
             <h5>Order summery: {cart.length}</h5>
-            <h4>Product Price: {total}</h4>
+            <h4>Product Price: {fixedNumber(total)}</h4>
             <h4>Shipping Cost: {fixedNumber(shipping)}</h4>
             <h4>10% Vat + Tax: {tax}</h4>
             <h4>Total:{grandTotal}</h4>
