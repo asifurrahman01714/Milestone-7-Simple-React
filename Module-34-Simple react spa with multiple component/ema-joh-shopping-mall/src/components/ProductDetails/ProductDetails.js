@@ -22,7 +22,7 @@ const ProductDetails = () => {
     return (
         <div>
             <h1>Product Id :{product?.key}</h1>
-            <Product pd ={product}/>
+            <Product pd ={product} showAddToCart={false}/>
         </div>
     );
 };
