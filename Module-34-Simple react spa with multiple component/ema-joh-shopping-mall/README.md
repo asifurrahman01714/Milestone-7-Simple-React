@@ -20,3 +20,7 @@ you have to use eventHandler ,where there is state actually.
 ```bash
 https://reacttraining.com/react-router/web/guides/quick-start
 ```
+### Install react router
+```bash
+npm i react-router-dom
+```
