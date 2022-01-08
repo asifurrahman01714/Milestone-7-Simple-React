@@ -19,7 +19,9 @@ const Shop = () => {
         console.log('Product added', product);
         const newCart = [...cart, product];
         setCart(newCart);
-        addToDb(product.key, 1);
+        const sameProduct = newCart.filter(pd => pd.key === product.key);
+        const count = sameProduct.length;
+        addToDb(product.key, count);
     }
     
     // console.log(products.slice(0,10));
