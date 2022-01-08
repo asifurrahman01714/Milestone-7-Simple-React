@@ -2,6 +2,7 @@ import React from 'react';
 import './product.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee,faShoppingCart } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom';
 
 const Product = (props) => {
     // console.log(props.pd);
@@ -12,7 +13,7 @@ const Product = (props) => {
                 <img src={img} alt=""/>
             </div>
             <div className="singleProductContent">
-                <h3><a href="#">{name}</a></h3>
+                <h3><Link>{name}</Link> </h3>
                 <span>by: {seller}</span>
                 <h3>Price: ${price}</h3>
                 <button onClick={()=>{props.handleAddProduct(props.pd)}}><FontAwesomeIcon icon={faShoppingCart}/> Add to Cart</button>
