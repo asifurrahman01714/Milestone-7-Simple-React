@@ -6,6 +6,7 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+import Review from "./components/Review/Review";
 
 function App() {
   return (
@@ -20,6 +21,12 @@ function App() {
           <Route exact path="/">
             <Shop />
           </Route>
+
+          <Route path="/review">
+            <Review />
+          </Route>
+
+          
 
         </Switch>
       </Router>
