@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const Product = (props) => {
     // console.log(props.pd);
     const {key, name, img, seller,price} = props.pd;
-    console.log(props.pd)
+    // console.log(props.pd)
     return (
         <div className="singleProduct">
             <div className="singleProductImage">

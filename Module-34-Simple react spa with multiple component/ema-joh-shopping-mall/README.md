@@ -34,4 +34,17 @@ npm i react-router-dom
 2. <Route path="/product/:productId">
             <ProductDetails/>
     </Route>
+
+3. import React from 'react';
+import { useParams } from 'react-router-dom/cjs/react-router-dom.min';
+
+const ProductDetails = () => {
+    console.log(useParams());
+    const {productId} = useParams();
+    return (
+        <div>
+            <h1>Product Id :{productId}</h1>
+        </div>
+    );
+};
 ```
