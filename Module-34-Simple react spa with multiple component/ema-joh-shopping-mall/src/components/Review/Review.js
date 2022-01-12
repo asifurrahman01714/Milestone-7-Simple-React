@@ -1,10 +1,14 @@
 import React from 'react';
 import { useEffect } from 'react/cjs/react.development';
-
+import {getDb} from '../../utilities/fakedb';
 const Review = () => {
     const [cart, setCart] = React.useState([]);
     useEffect(() => {
-        
+        const savedCart = getDb();
+        console.log(savedCart);
+        if (savedCart) {
+            setCart(savedCart);
+        }
     }, []);
     return (
         <div>
