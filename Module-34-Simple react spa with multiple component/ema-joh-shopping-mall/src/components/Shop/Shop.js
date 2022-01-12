@@ -16,7 +16,7 @@ const Shop = () => {
         })
     }, []);
     const handleAddProduct = (product) => {
-        console.log('Product added', product);
+        // console.log('Product added', product);
         const newCart = [...cart, product];
         setCart(newCart);
         const sameProduct = newCart.filter(pd => pd.key === product.key);
