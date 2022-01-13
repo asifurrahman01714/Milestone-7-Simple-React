@@ -27,7 +27,7 @@ The expressions in the placeholders and the text between the
 backticks (` `) get passed to a function. 
 Using this template literal we can easily call any property from any object.
 */
-let text = `Welcome ${person.name} !`;
+let text = `Welcome ${person.firstName} !`;
 console.log(text);
 // conditional
 let hour = 12;
@@ -38,4 +38,8 @@ if (hour < 18) {
     greeting = "Good evening";
 }
 console.log(greeting);
+
+// Array
+const friends = ['John','Mark','Mary'];
+console.log(friends);
 
