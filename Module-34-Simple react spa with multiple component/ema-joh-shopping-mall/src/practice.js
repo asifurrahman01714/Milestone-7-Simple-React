@@ -29,4 +29,13 @@ Using this template literal we can easily call any property from any object.
 */
 let text = `Welcome ${person.name} !`;
 console.log(text);
+// conditional
+let hour = 12;
+let greeting;
+if (hour < 18) {
+    greeting = "Good day";
+  } else {
+    greeting = "Good evening";
+}
+console.log(greeting);
 
