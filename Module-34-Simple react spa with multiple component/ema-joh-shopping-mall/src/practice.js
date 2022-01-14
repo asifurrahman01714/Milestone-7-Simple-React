@@ -18,6 +18,9 @@ let person = {
     eyeColor:"blue"
 };
 
+console.log(Object.keys(person));
+console.log(Object.values(person));
+console.log(Object.entries(person));
 /* Template literals are enclosed by the backtick (` `) character 
 instead of double or single quotes.
 
@@ -40,6 +43,12 @@ if (hour < 18) {
 console.log(greeting);
 
 // Array
-const friends = ['John','Mark','Mary'];
+const friends = [
+  {name:'John', id: '17702061', age:'23'},
+  {name:'Mary', id: '17702062', age:'23'},
+  {name:'John', id: '17702061', age:'23'}
+];
 console.log(friends);
+
+
 
