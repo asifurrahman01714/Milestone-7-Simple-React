@@ -52,9 +52,13 @@ for (let i = 0; i < friends.length; i++) {
   console.log(friends[i].name);
 }
 //function
-function add(a, b) { // function declaration
+function add1(a, b) { // function declaration
   return a + b;
 }
-console.log(add(5, 6)); // function call
+console.log(add1(5, 6)); // function call
+
+// Arrow function to add two numbers
+const add = (a, b) => a + b;
+console.log(add(5, 6));
 
 
