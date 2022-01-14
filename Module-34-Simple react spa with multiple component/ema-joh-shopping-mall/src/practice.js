@@ -48,7 +48,9 @@ const friends = [
   {name:'Mary', id: '17702062', age:'23'},
   {name:'John', id: '17702061', age:'23'}
 ];
-console.log(friends);
+for (let i = 0; i < friends.length; i++) {
+  console.log(friends[i].name);
+}
 
 
 
