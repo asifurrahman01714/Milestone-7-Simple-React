@@ -61,4 +61,8 @@ console.log(add1(5, 6)); // function call
 const add = (a, b) => a + b;
 console.log(add(5, 6));
 
+const name1 = 'Mary';
+console.log(`Hello ${name1}`);
+
+
 
