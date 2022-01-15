@@ -18,7 +18,7 @@ const Review = () => {
     }, []);
     return (
         <div>
-            <h1>Cart items;{cart.length}</h1>
+            <h1>Cart items: {cart.length}</h1>
         </div>
     );
 };
