@@ -18,9 +18,10 @@ const Review = () => {
         setCart(cartProducts);
     }, []);
     const removeProduct = (productKey) => {
-        console.log("Remove product", productKey);
-        const newCart = cart.filter(pd => pd.key !== productKey);
-        setCart(newCart);
+        // console.log("Remove product", productKey);
+        // const newCart = cart.filter(pd => pd.key !== productKey);
+        // setCart(newCart);
+        console.log("removed");
     }
     return (
         <div>

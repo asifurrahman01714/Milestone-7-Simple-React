@@ -24,7 +24,7 @@ const ReviewItem = (props) => {
         <div style={reviewItemStyle}>
             <h3 style={headingStyle}>Name: {name}</h3>
             <h4>Quantity: {quantity}</h4>
-            <button style={buttonStyle}>Remove</button>
+            <button style={buttonStyle} onClick={props.removeProduct}>Remove</button>
         </div>
     );
 };
