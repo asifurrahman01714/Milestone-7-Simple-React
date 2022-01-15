@@ -17,11 +17,16 @@ const Review = () => {
         console.log(cartProducts);
         setCart(cartProducts);
     }, []);
+    const removeProduct = (productKey) => {
+        console.log("Remove product", productKey);
+        const newCart = cart.filter(pd => pd.key !== productKey);
+        setCart(newCart);
+    }
     return (
         <div>
             <h1>Cart items: {cart.length}</h1>
             {
-                cart.map(pd => <ReviewItem key={pd.key} product={pd} />)
+                cart.map(pd => <ReviewItem key={pd.key} product={pd} removeProduct={removeProduct}/>)
             }
         </div>
     );
