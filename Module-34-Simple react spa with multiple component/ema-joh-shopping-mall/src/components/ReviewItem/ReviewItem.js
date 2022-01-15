@@ -14,7 +14,7 @@ const ReviewItem = (props) => {
         color: 'blue'
     }
     const buttonStyle ={
-        backgroundColor: 'yellow',
+        backgroundColor: '#ff9800',
         padding: '5px',
         borderRadius: '5px',
         fontWeight: 'bold',
