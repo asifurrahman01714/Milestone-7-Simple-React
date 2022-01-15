@@ -1,6 +1,7 @@
 import React from 'react';
 import { useEffect, useState } from 'react/cjs/react.development';
 import {getDatabaseCart} from '../../utilities/fakedb';
+import {removeFromDatabaseCart} from '../../utilities/fakedb';
 import fakeData from '../../fakeData';
 import ReviewItem from '../ReviewItem/ReviewItem';
 
@@ -21,6 +22,7 @@ const Review = () => {
         console.log("Remove product", productKey);
         const newCart = cart.filter(pd => pd.key !== productKey);
         setCart(newCart);
+        removeFromDatabaseCart(productKey);
     }
     return (
         <div>
