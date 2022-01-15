@@ -9,12 +9,16 @@ const Review = () => {
         const savedCart = getDatabaseCart();
         console.log(savedCart);
         const productKeys = Object.keys(savedCart);
-        console.log(productKeys);
-        const counts = Object.values(savedCart);
-        console.log(counts);
+        // console.log(productKeys);
+        // const counts = Object.values(savedCart);
+        // console.log(counts);
 
-        // const realProduct = fakeData.filter(pd => productKeys === pd.key);
-        // console.log(realProduct);
+    //    const cartProducts = productKeys.map(k => {
+    //         const product = fakeData.find(pd => pd.key === k);
+    //         product.quantity = savedCart[key];
+    //         return product;
+    //     });
+        // console.log(cartProducts);
     }, []);
     return (
         <div>
