@@ -9,11 +9,7 @@ const ProductDetails = () => {
     const {productId} = useParams();
     const [products, setProducts] = React.useState([]);
     useEffect(() => {
-        fetch(fakeData)
-        .then(res => res.json())
-        .then(data => {
-            setProducts(data);
-        })
+        setProducts(fakeData);
     }, []);
     const product = products.find(pd => pd.key === productId);
     // console.log(products);

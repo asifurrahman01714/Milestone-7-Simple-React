@@ -9,12 +9,9 @@ const Shop = () => {
     const [products, setProducts] = React.useState([]);
     const [cart, setCart] = React.useState([]);
     useEffect(() => {
-        fetch(fakeData)
-        .then(res => res.json())
-        .then(data => {
-            setProducts(data);
-        })
+       setProducts(fakeData);
     }, []);
+    console.log(products);
     const handleAddProduct = (product) => {
         // console.log('Product added', product);
         const newCart = [...cart, product];

@@ -5,27 +5,14 @@ import fakeData from '../../fakeData';
 
 const Review = () => {
     const [cart, setCart] = useState([]);
-    const [fakeDataProduct, setFakeDataProduct] = useState([]);
-    useEffect(() => {
-        fetch(fakeData)
-        .then(res => res.json())
-        .then(data => {
-            setFakeDataProduct(data);
-            console.log(data);
-            console.log(fakeDataProduct);
-        })
-    }, []);
-
-
     useEffect(() => {
         const savedCart = getDatabaseCart();
         const productKeys = Object.keys(savedCart);
         
 
        const cartProducts = productKeys.map(key => {
-           console.log(fakeDataProduct);
-            const product = fakeDataProduct.find(pd => pd.key === key);
-            // product.quantity = savedCart[key];
+            const product = fakeData.find(pd => pd.key === key);
+            product.quantity = savedCart[key];
             console.log(product);
             return product;
         })
