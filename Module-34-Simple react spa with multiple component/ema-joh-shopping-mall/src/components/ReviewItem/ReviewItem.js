@@ -10,9 +10,13 @@ const ReviewItem = (props) => {
         padding: '10px'
 
     }
+    const headingStyle={
+        color: 'blue'
+    }
+    
     return (
         <div style={reviewItemStyle}>
-            <h3>Name: {name}</h3>
+            <h3 style={headingStyle}>Name: {name}</h3>
             <h4>Quantity: {quantity}</h4>
             <button>Remove</button>
         </div>
