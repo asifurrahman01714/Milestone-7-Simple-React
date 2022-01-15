@@ -6,7 +6,10 @@ const Review = () => {
     useEffect(() => {
         const savedCart = getDatabaseCart();
         console.log(savedCart);
-        
+        const productKeys = Object.keys(savedCart);
+        console.log(productKeys);
+        const counts = Object.values(savedCart);
+        console.log(counts);
     }, []);
     return (
         <div>

@@ -17,6 +17,14 @@ let person = {
     age:50, 
     eyeColor:"blue"
 };
+const personKeys = Object.keys(person);
+console.log(personKeys);
+const personValues = personKeys.map(personKey => person[personKey]);
+console.log(personValues);
+
+
+
+
 
 console.log(Object.keys(person));
 console.log(Object.values(person));
@@ -48,6 +56,7 @@ const friends = [
   {name:'Mary', id: '17702062', age:'23'},
   {name:'John', id: '17702061', age:'23'}
 ];
+
 for (let i = 0; i < friends.length; i++) {
   console.log(friends[i].name);
 }
