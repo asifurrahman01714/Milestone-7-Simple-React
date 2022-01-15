@@ -13,12 +13,18 @@ const ReviewItem = (props) => {
     const headingStyle={
         color: 'blue'
     }
-    
+    const buttonStyle ={
+        backgroundColor: 'yellow',
+        padding: '5px',
+        borderRadius: '5px',
+        fontWeight: 'bold',
+        cursor: 'pointer'
+    }
     return (
         <div style={reviewItemStyle}>
             <h3 style={headingStyle}>Name: {name}</h3>
             <h4>Quantity: {quantity}</h4>
-            <button>Remove</button>
+            <button style={buttonStyle}>Remove</button>
         </div>
     );
 };
