@@ -1,6 +1,6 @@
 import React from 'react';
 import { useEffect } from 'react/cjs/react.development';
-import fakeData from '../../fakeData/products.JSON';
+import fakeData from '../../fakeData';
 import Cart from '../Cart/Cart';
 import Product from '../Product/Product';
 import './shop.css';

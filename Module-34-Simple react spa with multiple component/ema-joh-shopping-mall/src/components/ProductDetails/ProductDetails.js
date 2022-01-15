@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom/cjs/react-router-dom.min';
 import { useEffect, useState } from 'react/cjs/react.development';
-import fakeData from '../../fakeData/products.JSON';
+import fakeData from '../../fakeData';
 import Product from '../Product/Product';
 
 const ProductDetails = () => {

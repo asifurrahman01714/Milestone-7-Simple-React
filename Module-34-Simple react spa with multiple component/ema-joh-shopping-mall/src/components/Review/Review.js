@@ -1,7 +1,7 @@
 import React from 'react';
 import { useEffect, useState } from 'react/cjs/react.development';
 import {getDatabaseCart} from '../../utilities/fakedb';
-import fakeData from '../../fakeData/products.JSON';
+import fakeData from '../../fakeData';
 
 const Review = () => {
     const [cart, setCart] = useState([]);
@@ -23,7 +23,7 @@ const Review = () => {
         
 
        const cartProducts = productKeys.map(key => {
-            
+           console.log(fakeDataProduct);
             const product = fakeDataProduct.find(pd => pd.key === key);
             // product.quantity = savedCart[key];
             console.log(product);
