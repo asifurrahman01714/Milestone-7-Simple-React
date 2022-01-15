@@ -23,7 +23,8 @@ console.log(personKeys);
 const personValues = personKeys.map(personKey => person[personKey]);
 console.log(personValues);
 
-
+person.salary = '$50000';
+console.log(person);
 
 
 
