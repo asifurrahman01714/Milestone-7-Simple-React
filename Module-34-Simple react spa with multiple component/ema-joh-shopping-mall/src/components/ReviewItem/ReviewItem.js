@@ -1,9 +1,12 @@
 import React from 'react';
 
-const ReviewItem = () => {
+const ReviewItem = (props) => {
+    const {name, quantity, price} = props.product;
     return (
         <div>
-            This is review item
+            <h1>Name: {name}</h1>
+            <h1>Quantity: {quantity}</h1>
+            <button>Remove</button>
         </div>
     );
 };
