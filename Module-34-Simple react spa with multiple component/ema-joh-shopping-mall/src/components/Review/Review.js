@@ -1,24 +1,36 @@
 import React from 'react';
-import { useEffect } from 'react/cjs/react.development';
+import { useEffect, useState } from 'react/cjs/react.development';
 import {getDatabaseCart} from '../../utilities/fakedb';
 import fakeData from '../../fakeData/products.JSON';
 
 const Review = () => {
-    const [cart, setCart] = React.useState([]);
+    const [cart, setCart] = useState([]);
+    const [fakeDataProduct, setFakeDataProduct] = useState([]);
+    useEffect(() => {
+        fetch(fakeData)
+        .then(res => res.json())
+        .then(data => {
+            setFakeDataProduct(data);
+            console.log(data);
+            console.log(fakeDataProduct);
+        })
+    }, []);
+
+
     useEffect(() => {
         const savedCart = getDatabaseCart();
-        console.log(savedCart);
         const productKeys = Object.keys(savedCart);
-        // console.log(productKeys);
-        // const counts = Object.values(savedCart);
-        // console.log(counts);
+        
 
-    //    const cartProducts = productKeys.map(k => {
-    //         const product = fakeData.find(pd => pd.key === k);
-    //         product.quantity = savedCart[key];
-    //         return product;
-    //     });
-        // console.log(cartProducts);
+       const cartProducts = productKeys.map(key => {
+            
+            const product = fakeDataProduct.find(pd => pd.key === key);
+            // product.quantity = savedCart[key];
+            console.log(product);
+            return product;
+        })
+           
+        console.log(cartProducts);
     }, []);
     return (
         <div>
