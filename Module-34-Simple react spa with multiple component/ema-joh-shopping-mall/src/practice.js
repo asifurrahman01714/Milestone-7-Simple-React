@@ -17,6 +17,7 @@ let person = {
     age:50, 
     eyeColor:"blue"
 };
+console.log(person.firstName);
 const personKeys = Object.keys(person);
 console.log(personKeys);
 const personValues = personKeys.map(personKey => person[personKey]);
