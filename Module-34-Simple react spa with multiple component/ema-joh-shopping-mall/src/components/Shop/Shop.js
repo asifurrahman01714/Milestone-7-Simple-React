@@ -4,7 +4,7 @@ import fakeData from '../../fakeData/products.JSON';
 import Cart from '../Cart/Cart';
 import Product from '../Product/Product';
 import './shop.css';
-import {addToDb} from '../../utilities/fakedb';
+import {addToDatabaseCart} from '../../utilities/fakedb';
 const Shop = () => {
     const [products, setProducts] = React.useState([]);
     const [cart, setCart] = React.useState([]);
@@ -21,7 +21,7 @@ const Shop = () => {
         setCart(newCart);
         const sameProduct = newCart.filter(pd => pd.key === product.key);
         const count = sameProduct.length;
-        addToDb(product.key, count);
+        addToDatabaseCart(product.key, count);
     }
     
     // console.log(products.slice(0,10));
