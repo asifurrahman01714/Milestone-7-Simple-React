@@ -14,10 +14,11 @@ const Review = () => {
             return product;
         })
         console.log(cartProducts);
+        setCart(cartProducts);
     }, []);
     return (
         <div>
-            <h1>This is review page</h1>
+            <h1>Cart items;{cart.length}</h1>
         </div>
     );
 };
