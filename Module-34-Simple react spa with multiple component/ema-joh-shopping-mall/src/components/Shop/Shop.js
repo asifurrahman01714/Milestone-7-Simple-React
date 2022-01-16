@@ -5,6 +5,7 @@ import Cart from '../Cart/Cart';
 import Product from '../Product/Product';
 import './shop.css';
 import {addToDatabaseCart} from '../../utilities/fakedb';
+import {getDatabaseCart} from '../../utilities/fakedb';
 const Shop = () => {
     const [products, setProducts] = React.useState([]);
     const [cart, setCart] = React.useState([]);
@@ -13,6 +14,11 @@ const Shop = () => {
     }, []);
     // console.log(products);
 
+    useEffect(() => {
+        const savedCart = getDatabaseCart();
+        console.log(savedCart);
+        
+    }, []);
     const handleAddProduct =(product) =>{
         // console.log('product added');
         // console.log(product);
@@ -32,7 +38,7 @@ const Shop = () => {
         setCart(newCart);
         addToDatabaseCart(product.key, count);
     }
-    
+    console.log(cart);
     // console.log(products.slice(0,10));
     return (
         <div className="shopContainer">
