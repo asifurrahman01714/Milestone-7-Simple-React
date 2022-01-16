@@ -48,3 +48,5 @@ const ProductDetails = () => {
     );
 };
 ```
+
+### Use React developer chrome extension
