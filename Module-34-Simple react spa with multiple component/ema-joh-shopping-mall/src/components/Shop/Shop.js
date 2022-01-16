@@ -25,7 +25,9 @@ const Shop = () => {
             return product
         })
         // console.log(previousCart);
+        setCart(previousCart);
     }, []);
+    console.log(cart);
     const handleAddProduct =(product) =>{
         // console.log('product added');
         // console.log(product);
