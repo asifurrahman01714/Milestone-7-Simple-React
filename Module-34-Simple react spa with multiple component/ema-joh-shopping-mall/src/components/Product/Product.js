@@ -21,7 +21,7 @@ const Product = (props) => {
             </div>
             <div className="singleProductContent">
                 {/* <h3><Link to={"/product/"+key}>{name}</Link> </h3> */}
-                <h3><Link to={`/product/${key}`}>{name}</Link> </h3>
+                <h5><Link to={`/product/${key}`}>{name}</Link> </h5>
                 <span>by: {seller}</span>
                 <h3>Price: ${price}</h3>
                 {props.showAddToCart !== false && <button onClick={()=>{props.handleAddProduct(props.pd)}}><FontAwesomeIcon icon={faShoppingCart}/> Add to Cart</button>}
