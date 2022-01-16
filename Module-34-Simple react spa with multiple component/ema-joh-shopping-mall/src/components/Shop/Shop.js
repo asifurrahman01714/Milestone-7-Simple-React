@@ -18,7 +18,12 @@ const Shop = () => {
         const savedCart = getDatabaseCart();
         // console.log(savedCart);
         const productKeys = Object.keys(savedCart);
-        console.log(productKeys);
+        // console.log(productKeys);
+        const previousCart = productKeys.map(existingKey =>{
+            const product = fakeData.find(pd=>pd.key === existingKey);
+            product.quantity = savedCart[existingKey];
+            return product
+        })
         
     }, []);
     const handleAddProduct =(product) =>{
