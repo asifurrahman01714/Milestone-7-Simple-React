@@ -33,7 +33,7 @@ const Review = () => {
                 }
             </div>
             <div className="col-md-4">
-                <Cart cart={cart}></Cart>
+                <Cart cart={cart} review={true}></Cart>
             </div>
         </div>
     );
