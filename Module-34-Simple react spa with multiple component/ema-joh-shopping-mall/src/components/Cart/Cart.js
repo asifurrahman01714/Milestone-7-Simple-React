@@ -32,7 +32,8 @@ const Cart = (props) => {
     }
     return (
         <div>
-            <h3 className='text-center fw-bold'>Order summery: {cart.length}</h3>
+            <h3 className='mt-2 fw-bold'>Order summery: {cart.length}</h3>
+            <br />
             <h4>Product Price: {fixedNumber(total)}</h4>
             <h4>Shipping Cost: {fixedNumber(shipping)}</h4>
             <h4>10% Vat + Tax: {tax}</h4>

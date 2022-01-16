@@ -4,6 +4,7 @@ import {getDatabaseCart} from '../../utilities/fakedb';
 import {removeFromDatabaseCart} from '../../utilities/fakedb';
 import fakeData from '../../fakeData';
 import ReviewItem from '../ReviewItem/ReviewItem';
+import Cart from '../Cart/Cart';
 
 const Review = () => {
     const [cart, setCart] = useState([]);
@@ -25,11 +26,15 @@ const Review = () => {
         removeFromDatabaseCart(productKey);
     }
     return (
-        <div>
-            <h1>Cart items: {cart.length}</h1>
-            {
-                cart.map(pd => <ReviewItem key={pd.key} product={pd} removeProduct={removeProduct}/>)
-            }
+        <div className="row">
+            <div className="col-md-8">
+                {
+                    cart.map(pd => <ReviewItem key={pd.key} product={pd} removeProduct={removeProduct}/>)
+                }
+            </div>
+            <div className="col-md-4">
+                <Cart cart={cart}></Cart>
+            </div>
         </div>
     );
 };
