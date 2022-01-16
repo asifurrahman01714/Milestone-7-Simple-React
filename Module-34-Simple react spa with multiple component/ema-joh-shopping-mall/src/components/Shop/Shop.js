@@ -24,7 +24,7 @@ const Shop = () => {
             product.quantity = savedCart[existingKey];
             return product
         })
-        
+        // console.log(previousCart);
     }, []);
     const handleAddProduct =(product) =>{
         // console.log('product added');
