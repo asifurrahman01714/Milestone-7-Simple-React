@@ -11,11 +11,11 @@ const Shop = () => {
     useEffect(() => {
        setProducts(fakeData);
     }, []);
-    console.log(products);
+    // console.log(products);
 
     const handleAddProduct =(product) =>{
-        console.log('product added');
-        console.log(product);
+        // console.log('product added');
+        // console.log(product);
         const toBeAddedKey = product.key;
         const sameProduct = cart.find(pd => pd.key === toBeAddedKey);
         let count = 1;
