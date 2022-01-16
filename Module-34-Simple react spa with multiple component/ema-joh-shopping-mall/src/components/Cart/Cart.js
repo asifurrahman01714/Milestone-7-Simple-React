@@ -7,11 +7,14 @@ const Cart = (props) => {
     let total = 0;
     for (let i = 0; i < cart.length; i++) {
         const product = cart[i];
+        total = total + product.price * product.quantity;
+        /*
         if (props.review === true) {
             total = total + product.price * product.quantity;
         } else {
             total = total + product.price ;
         }
+        */
     }
     const fixedNumber = (number) => {
         return Number(number.toFixed(2)); // If you toFixed, the number will be string
