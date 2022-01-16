@@ -22,7 +22,7 @@ const ReviewItem = (props) => {
     }
     return (
         <div style={reviewItemStyle}>
-            <h3 style={headingStyle}>Name: {name}</h3>
+            <h4 style={headingStyle}>Name: {name}</h4>
             <h4>Quantity: {quantity}</h4>
             <h5>Price: ${price}</h5>
             <button style={buttonStyle} onClick={()=> props.removeProduct(key)}>Remove</button>
