@@ -16,7 +16,9 @@ const Shop = () => {
 
     useEffect(() => {
         const savedCart = getDatabaseCart();
-        console.log(savedCart);
+        // console.log(savedCart);
+        const productKeys = Object.keys(savedCart);
+        console.log(productKeys);
         
     }, []);
     const handleAddProduct =(product) =>{
@@ -38,7 +40,7 @@ const Shop = () => {
         setCart(newCart);
         addToDatabaseCart(product.key, count);
     }
-    console.log(cart);
+    // console.log(cart);
     // console.log(products.slice(0,10));
     return (
         <div className="shopContainer">
