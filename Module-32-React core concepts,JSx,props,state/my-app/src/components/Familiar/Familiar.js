@@ -25,7 +25,7 @@ const Familiar = (props) => {
             <div>
                 <h1>Connection</h1>
                 {
-                    familiar && <h1>Let's connect with facebook</h1>
+                    familiar && <h1>Let's connect with facebook</h1> // Logical and always use where there exist only one condition.
                 }
             </div>
         </div>
