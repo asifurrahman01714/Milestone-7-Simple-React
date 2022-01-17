@@ -6,6 +6,8 @@ import Product from '../Product/Product';
 import './shop.css';
 import {addToDatabaseCart} from '../../utilities/fakedb';
 import {getDatabaseCart} from '../../utilities/fakedb';
+import { Link } from 'react-router-dom';
+
 const Shop = () => {
     const [products, setProducts] = React.useState([]);
     const [cart, setCart] = React.useState([]);
@@ -55,7 +57,9 @@ const Shop = () => {
                     {products.slice(0,10).map(product => <Product key={product.key} pd={product} handleAddProduct={handleAddProduct}/>)}
             </div>
             <div className="cartContainer">
-                <Cart cart={cart}></Cart>
+                <Cart cart={cart}>
+                    <Link to="/review"><button style={buttonStyle}>Review Order</button></Link>
+                </Cart>
             </div>
             
         </div>
