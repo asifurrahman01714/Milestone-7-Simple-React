@@ -9,6 +9,10 @@ import { Link } from 'react-router-dom';
 
 const Review = () => {
     const [cart, setCart] = useState([]);
+    const handlePlaceOrder = () => {
+        console.log('place order');
+        
+    }
     useEffect(() => {
         const savedCart = getDatabaseCart();
         const productKeys = Object.keys(savedCart);
