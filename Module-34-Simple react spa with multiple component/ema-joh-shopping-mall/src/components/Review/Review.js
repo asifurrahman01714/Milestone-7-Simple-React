@@ -10,12 +10,13 @@ import thankYouImage from '../../images/giphy.gif';
 
 const Review = () => {
     const [cart, setCart] = useState([]);
+    const [orderPlaced, setOrderPlaced] = useState(false);
     const handlePlaceOrder = () => {
         console.log('place order');
         setCart([]);
+        setOrderPlaced(true);
         processOrder();
     }
-    const [orderPlaced, setOrderPlaced] = useState(false);
     useEffect(() => {
         const savedCart = getDatabaseCart();
         const productKeys = Object.keys(savedCart);
