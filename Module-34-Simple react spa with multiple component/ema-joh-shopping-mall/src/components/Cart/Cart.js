@@ -59,7 +59,7 @@ const Cart = (props) => {
             <h4>Shipping Cost: {fixedNumber(shipping)}</h4>
             <h4>10% Vat + Tax: {tax}</h4>
             <h4>Total:{grandTotal}</h4>
-            <Link to="/review"><button style={buttonStyle}>Review Order</button></Link>
+            
         </div>
     );
 };
