@@ -5,6 +5,7 @@ import {removeFromDatabaseCart} from '../../utilities/fakedb';
 import fakeData from '../../fakeData';
 import ReviewItem from '../ReviewItem/ReviewItem';
 import Cart from '../Cart/Cart';
+import { Link } from 'react-router-dom';
 
 const Review = () => {
     const [cart, setCart] = useState([]);
@@ -25,6 +26,13 @@ const Review = () => {
         setCart(newCart);
         removeFromDatabaseCart(productKey);
     }
+    const buttonStyle ={
+        backgroundColor: '#ffb547',
+        padding: '5px',
+        borderRadius: '5px',
+        fontWeight: 'bold',
+        cursor: 'pointer'
+    }
     return (
         <div className="row">
             <div className="col-md-8">
@@ -33,7 +41,9 @@ const Review = () => {
                 }
             </div>
             <div className="col-md-4">
-                <Cart cart={cart} review={true}></Cart>
+                <Cart cart={cart} review={true}>
+                    <Link to=""><button style={buttonStyle}>Place Order</button></Link>
+                </Cart>
             </div>
         </div>
     );
