@@ -29,13 +29,6 @@ const Cart = (props) => {
     } else if (total>0) {
         shipping = 12.99;
     }
-    const buttonStyle ={
-        backgroundColor: '#ffb547',
-        padding: '5px',
-        borderRadius: '5px',
-        fontWeight: 'bold',
-        cursor: 'pointer'
-    }
     let cartStyle;
     if (props.review === true) {
         cartStyle = {

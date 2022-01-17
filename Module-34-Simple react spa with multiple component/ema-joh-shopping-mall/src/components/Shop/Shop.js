@@ -51,6 +51,13 @@ const Shop = () => {
     }
     // console.log(cart);
     // console.log(products.slice(0,10));
+    const buttonStyle ={
+        backgroundColor: '#ffb547',
+        padding: '5px',
+        borderRadius: '5px',
+        fontWeight: 'bold',
+        cursor: 'pointer'
+    }
     return (
         <div className="shopContainer">
             <div className="productContainer">
