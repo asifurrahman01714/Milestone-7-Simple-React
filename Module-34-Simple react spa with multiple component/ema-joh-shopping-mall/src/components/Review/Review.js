@@ -2,16 +2,17 @@ import React from 'react';
 import { useEffect, useState } from 'react/cjs/react.development';
 import {getDatabaseCart} from '../../utilities/fakedb';
 import {removeFromDatabaseCart} from '../../utilities/fakedb';
+import {processOrder} from '../../utilities/fakedb';
 import fakeData from '../../fakeData';
 import ReviewItem from '../ReviewItem/ReviewItem';
 import Cart from '../Cart/Cart';
-import { Link } from 'react-router-dom';
 
 const Review = () => {
     const [cart, setCart] = useState([]);
     const handlePlaceOrder = () => {
         console.log('place order');
-        
+        setCart([]);
+        processOrder();
     }
     useEffect(() => {
         const savedCart = getDatabaseCart();
@@ -46,7 +47,7 @@ const Review = () => {
             </div>
             <div className="col-md-4">
                 <Cart cart={cart} review={true}>
-                    <Link to=""><button style={buttonStyle} onClick={handlePlaceOrder}>Place Order</button></Link>
+                    <button style={buttonStyle} onClick={handlePlaceOrder}>Place Order</button>
                 </Cart>
             </div>
         </div>
