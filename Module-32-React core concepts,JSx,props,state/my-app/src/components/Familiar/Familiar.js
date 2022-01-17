@@ -16,6 +16,12 @@ const Familiar = (props) => {
                     greetings
                 }
             </div>
+            <div>
+                <h1>Food</h1>
+                {
+                    familiar ? <h1>I will buy food for you.</h1> :  <h1>Give your own bill to take food.</h1>
+                }
+            </div>
         </div>
     );
 };
