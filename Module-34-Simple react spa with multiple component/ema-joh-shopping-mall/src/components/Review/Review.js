@@ -48,9 +48,11 @@ const Review = () => {
                     cart.map(pd => <ReviewItem key={pd.key} product={pd} removeProduct={removeProduct}/>)
                 }
                 
-                    if (orderPlaced) {
-                        <img src={thankYouImage} alt="" />
+                <div className="m-3">
+                    { orderPlaced &&
+                            <img src={thankYouImage} alt="" />
                     }
+                </div>
                 
             </div>
             <div className="col-md-4">
