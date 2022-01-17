@@ -31,7 +31,7 @@ npm i react-router-dom
     or
 <h3><Link to={"/product/"+ key}}>{name}</Link> </h3>
 
-2. <Route path="/product/:productId">
+2. <Route path="/product/:productId"> // here ":productId" is dynamic data
             <ProductDetails/>
     </Route>
 
