@@ -40,7 +40,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>The man is familiar to you : {familiar}</h1>
-        
+        <button>Toggle</button>
         <h2>FakePerson : {fakePerson.length}</h2>
         {
           fakePerson.map(person => <li>{`${person.first_name} ${person.first_name}`}</li>)
