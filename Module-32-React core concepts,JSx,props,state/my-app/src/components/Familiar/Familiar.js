@@ -12,7 +12,9 @@ const Familiar = (props) => {
         <div>
             <div>
                 <h1>Greetings</h1>
-                
+                {
+                    greetings
+                }
             </div>
         </div>
     );
