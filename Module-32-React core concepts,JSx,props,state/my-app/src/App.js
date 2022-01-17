@@ -2,6 +2,7 @@ import './App.css';
 import { useState,useEffect } from 'react/cjs/react.development';
 import fakeDataJson from './fakeData/data.json';
 import fakeDataJs from './fakeData/data.js';
+import Familiar from './components/Familiar/Familiar';
 
 function App() {
   const [fakePerson, setFakePerson] = useState([]);
@@ -44,6 +45,7 @@ function App() {
           familiar === true? <h2>Hi! How are you friend?</h2>: <h2>Hey, who are you?</h2>
         } */}
         <button onClick={() =>setFamiliar(!familiar)}>Toggle</button>
+        <Familiar familiar={familiar}/>
         <h2>FakePerson : {fakePerson.length}</h2>
         {
           fakePerson.map(person => <li>{`${person.first_name} ${person.first_name}`}</li>)
