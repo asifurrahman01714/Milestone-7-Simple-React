@@ -6,6 +6,7 @@ import {processOrder} from '../../utilities/fakedb';
 import fakeData from '../../fakeData';
 import ReviewItem from '../ReviewItem/ReviewItem';
 import Cart from '../Cart/Cart';
+import thankYouImage from '../../images/giphy.gif';
 
 const Review = () => {
     const [cart, setCart] = useState([]);
