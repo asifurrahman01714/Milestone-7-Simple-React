@@ -75,5 +75,11 @@ console.log(add(5, 6));
 const name1 = 'Mary';
 console.log(`Hello ${name1}`);
 
-
+// Conditional operator
+const isUser = true;
+const isAdmin = false;
+const isUserAdmin = isUser === true ? 'true' : 'false';
+const isAdminUser = isAdmin === true ? 'true' : 'false';
+console.log(isUserAdmin);
+console.log(isAdminUser);
 
