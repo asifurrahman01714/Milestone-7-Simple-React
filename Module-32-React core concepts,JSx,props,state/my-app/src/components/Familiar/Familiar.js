@@ -22,6 +22,12 @@ const Familiar = (props) => {
                     familiar ? <h1>I will buy food for you.</h1> :  <h1>Give your own bill to take food.</h1>
                 }
             </div>
+            <div>
+                <h1>Connection</h1>
+                {
+                    familiar && <h1>Let's connect with facebook</h1>
+                }
+            </div>
         </div>
     );
 };
