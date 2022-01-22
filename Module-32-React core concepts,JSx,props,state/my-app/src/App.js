@@ -40,6 +40,7 @@ function App() {
       <Home count={count} setCount={setCount}/>
       <Header count={count} setCount={setCount}/>
       <button onClick={()=> setCount(count+1)}>Increase the count</button>
+      <br />
       <header className="App-header">
         <h1>The man is familiar to you : {familiar.toString()}</h1>
         {/* {
