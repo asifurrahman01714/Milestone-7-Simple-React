@@ -7,7 +7,7 @@ const Home = (props) => {
 
     // const count = useContext(UserContext);
     return (
-        <div>
+        <div style={{border: '1px solid black'}}>
             <h1>Count in home: {props.count}</h1>
             <Categories/>
         </div>
