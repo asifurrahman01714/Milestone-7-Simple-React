@@ -6,7 +6,8 @@ const Header = () => {
     const [count, setCount] = useContext(CountContext);
     return (
         <div>
-            <h1>Count in Header: </h1>
+            <h1>Count in Header: {count}</h1>
+            <button>Increase</button>
         </div>
     );
 };
