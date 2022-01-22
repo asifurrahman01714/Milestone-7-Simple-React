@@ -8,6 +8,9 @@ const Categories = () => {
     return (
         <div>
             <h1>Category  :{category}</h1>
+            <button>Laptop</button>
+            <button>Mobile</button>
+            <button>Camera</button>
             <CategoryDetails />
         </div>
     );

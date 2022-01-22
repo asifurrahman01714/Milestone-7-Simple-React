@@ -18,6 +18,7 @@ function App() {
    <CategoryContext.Provider value={[category, setCategory]}>
       <CountContext.Provider value={[count, setCount]}> 
       <h1>This count is : {count}</h1>
+      <h2>The catgory is :{category}</h2>
       <Home />
       <Header/>
     </CountContext.Provider>
