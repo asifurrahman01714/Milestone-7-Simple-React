@@ -37,8 +37,8 @@ function App() {
   return (
     <div className="App">
       <h1>This count is : {count}</h1>
-      <Home/>
-      <Header/>
+      <Home count={count} setCount={setCount}/>
+      <Header count={count} setCount={setCount}/>
       <header className="App-header">
         <h1>The man is familiar to you : {familiar.toString()}</h1>
         {/* {
