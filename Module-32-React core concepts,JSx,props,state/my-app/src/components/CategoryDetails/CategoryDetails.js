@@ -8,6 +8,7 @@ const CategoryDetails = (props) => {
     return (
         <div>
             <h1>Category Details of :{count}</h1>
+            <h1>Category Name: {name} of {category}</h1>
         </div>
     );
 };
