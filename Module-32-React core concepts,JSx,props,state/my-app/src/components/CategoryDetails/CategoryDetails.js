@@ -6,7 +6,7 @@ const CategoryDetails = () => {
     const count = useContext(CountContext)
     return (
         <div>
-            <h1>Category Details of :{machine}</h1>
+            <h1>Category Details of :{count}</h1>
         </div>
     );
 };
