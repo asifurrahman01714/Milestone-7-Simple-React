@@ -6,16 +6,16 @@ import Header from './components/Header/Header';
 function App() {
   // Let's we use context api to pass data
   // First import the context
+  // Then Wrap child components in the Context Provider and supply the state value.
   const UserContext = createContext();
   const [count, setCount] = useState(0);
   return (
-    <div className="App">
+    <UserContext.Provider value={count}>
       <h1>This count is : {count}</h1>
-      <Home count={count} setCount={setCount}/>
-      <Header count={count} setCount={setCount}/>
+      <Home/>
+      <Header/>
       <button onClick={()=> setCount(count+1)}>Increase the count</button>
-      
-    </div>
+    </UserContext.Provider>
   );
 }
 
