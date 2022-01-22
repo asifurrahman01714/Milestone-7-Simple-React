@@ -11,8 +11,9 @@ export const CountContext = createContext();
 
 function App() {
   const [count, setCount] = useState(0);
+  // so pass multiple value using third bracket.
   return (
-    <CountContext.Provider value={[count, setCount]}>
+    <CountContext.Provider value={[count, setCount]}> 
       <h1>This count is : {count}</h1>
       <Home />
       <Header/>
