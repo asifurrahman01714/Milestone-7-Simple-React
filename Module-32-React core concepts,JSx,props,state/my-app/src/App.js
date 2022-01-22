@@ -4,6 +4,7 @@ import fakeDataJson from './fakeData/data.json';
 import fakeDataJs from './fakeData/data.js';
 import Familiar from './components/Familiar/Familiar';
 import Home from './components/Home/Home';
+import Header from './components/Header/Header';
 
 function App() {
   const [fakePerson, setFakePerson] = useState([]);
@@ -41,6 +42,7 @@ function App() {
   return (
     <div className="App">
       <Home/>
+      <Header/>
       <header className="App-header">
         <h1>The man is familiar to you : {familiar.toString()}</h1>
         {/* {
