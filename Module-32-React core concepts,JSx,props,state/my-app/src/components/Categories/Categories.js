@@ -16,9 +16,12 @@ const Categories = () => {
         {name:'Apple', category:'Mobile'},
         {name:'Huawei', category:'Mobile'},
     ]
+    const findingProducts = products.filter(product => product.category === category);
+    console.log(findingProducts);
     return (
         <div>
             <h1>Category  :{category}</h1>
+            <h2>Total finding products :{findingProducts.length}</h2>
             <button onClick={()=> setCategory('Laptop')}>Laptop</button>
             <button onClick={()=> setCategory('Mobile')}>Mobile</button>
             <button onClick={()=> setCategory('Camera')}>Camera</button>
