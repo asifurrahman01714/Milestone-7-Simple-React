@@ -6,7 +6,7 @@ const CategoryDetails = (props) => {
     const count = useContext(CountContext);
     const {name, category} = props.product;
     return (
-        <div>
+        <div style={{border:'1px solid black'}}>
             {/* <h1>Category Details of :{count}</h1> */}
             <h1>Category Name: {name} of {category}</h1>
         </div>
