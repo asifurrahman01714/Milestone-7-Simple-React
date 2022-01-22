@@ -1,10 +1,9 @@
 import React from 'react';
 
-const Header = (props) => {
-    const {count, setCount} = props;
+const Header = () => {
     return (
         <div>
-            <h1>Count in Header: {count}</h1>
+            <h1>Count in Header: </h1>
         </div>
     );
 };

@@ -12,9 +12,9 @@ const UserContext = createContext();
 function App() {
   const [count, setCount] = useState(0);
   return (
-    <UserContext.Provider value={count}>
+    <UserContext.Provider value='zero'>
       <h1>This count is : {count}</h1>
-      <Home count={count}/>
+      <Home />
       <Header/>
       <button onClick={()=> setCount(count+1)}>Increase the count</button>
     </UserContext.Provider>
