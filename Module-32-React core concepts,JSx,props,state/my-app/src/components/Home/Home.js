@@ -1,5 +1,4 @@
 import React from 'react';
-import { useState, createContext, useContext } from "react";
 const Home = (props) => {
     // In order to use the Context in a child component, 
     // we need to access it using the useContext Hook.
