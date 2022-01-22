@@ -25,7 +25,9 @@ const Categories = () => {
             <button onClick={()=> setCategory('Laptop')}>Laptop</button>
             <button onClick={()=> setCategory('Mobile')}>Mobile</button>
             <button onClick={()=> setCategory('Camera')}>Camera</button>
-            <CategoryDetails />
+            {
+                findingProducts.map(product => <CategoryDetails product={product}/>)
+            }
         </div>
     );
 };
