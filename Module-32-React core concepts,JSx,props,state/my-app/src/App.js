@@ -3,6 +3,7 @@ import { useState,useEffect } from 'react/cjs/react.development';
 import fakeDataJson from './fakeData/data.json';
 import fakeDataJs from './fakeData/data.js';
 import Familiar from './components/Familiar/Familiar';
+import Home from './components/Home/Home';
 
 function App() {
   const [fakePerson, setFakePerson] = useState([]);
@@ -39,6 +40,7 @@ function App() {
   const [familiar, setFamiliar] = useState(false);
   return (
     <div className="App">
+      <Home/>
       <header className="App-header">
         <h1>The man is familiar to you : {familiar.toString()}</h1>
         {/* {
