@@ -1,10 +1,12 @@
 import './App.css';
-import { useState } from 'react/cjs/react.development';
+import { createContext, useState } from 'react/cjs/react.development';
 import Home from './components/Home/Home';
 import Header from './components/Header/Header';
 
 function App() {
   // Let's we use context api to pass data
+  // First import the context
+  const UserContext = createContext();
   const [count, setCount] = useState(0);
   return (
     <div className="App">
