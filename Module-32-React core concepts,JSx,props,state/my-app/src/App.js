@@ -12,9 +12,10 @@ export const CategoryContext = createContext();
 
 function App() {
   const [count, setCount] = useState(0);
+  const [category, setCategory]= useState('Laptop')
   // so pass multiple value using third bracket.
   return (
-   <CategoryContext.Provider>
+   <CategoryContext.Provider value={}>
       <CountContext.Provider value={[count, setCount]}> 
       <h1>This count is : {count}</h1>
       <Home />
