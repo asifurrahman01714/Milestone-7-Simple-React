@@ -1,4 +1,5 @@
 import React from 'react';
+import Categories from '../Categories/Categories';
 const Home = (props) => {
     // In order to use the Context in a child component, 
     // we need to access it using the useContext Hook.
@@ -8,6 +9,7 @@ const Home = (props) => {
     return (
         <div>
             <h1>Count in home: {props.count}</h1>
+            <Categories/>
         </div>
     );
 };
