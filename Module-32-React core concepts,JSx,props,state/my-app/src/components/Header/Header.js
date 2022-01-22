@@ -4,7 +4,7 @@ const Header = (props) => {
     const {count, setCount} = props;
     return (
         <div>
-            <h1>This is header</h1>
+            <h1>Count in Header: {count}</h1>
         </div>
     );
 };
