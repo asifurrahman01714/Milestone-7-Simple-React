@@ -33,6 +33,7 @@ function App() {
     {name: 'Debut', price:"$200"},
   ]
   const [familiar, setFamiliar] = useState(false);
+  const [count, setCount] = useState(0);
   return (
     <div className="App">
       <Home/>
