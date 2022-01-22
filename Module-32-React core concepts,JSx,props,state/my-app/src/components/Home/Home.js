@@ -4,7 +4,7 @@ const Home = (props) => {
     const {count, setCount} = props;
     return (
         <div>
-            <h1>This is a home component</h1>
+            <h1>Count in home: {count}</h1>
         </div>
     );
 };
