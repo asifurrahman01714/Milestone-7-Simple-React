@@ -37,6 +37,7 @@ function App() {
   return (
     <div className="App">
       <h1>This count is : {count}</h1>
+      <button>Increase the count</button>
       <Home count={count} setCount={setCount}/>
       <Header count={count} setCount={setCount}/>
       <header className="App-header">
