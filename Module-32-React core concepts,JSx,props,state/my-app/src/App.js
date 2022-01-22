@@ -37,9 +37,9 @@ function App() {
   return (
     <div className="App">
       <h1>This count is : {count}</h1>
-      <button>Increase the count</button>
       <Home count={count} setCount={setCount}/>
       <Header count={count} setCount={setCount}/>
+      <button>Increase the count</button>
       <header className="App-header">
         <h1>The man is familiar to you : {familiar.toString()}</h1>
         {/* {
