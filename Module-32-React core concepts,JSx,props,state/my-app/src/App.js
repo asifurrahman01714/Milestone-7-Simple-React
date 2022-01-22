@@ -15,7 +15,7 @@ function App() {
   const [category, setCategory]= useState('Laptop')
   // so pass multiple value using third bracket.
   return (
-   <CategoryContext.Provider value={}>
+   <CategoryContext.Provider value={[category, setCategory]}>
       <CountContext.Provider value={[count, setCount]}> 
       <h1>This count is : {count}</h1>
       <Home />
