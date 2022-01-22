@@ -9,10 +9,6 @@ import Header from './components/Header/Header';
 function App() {
   const [fakePerson, setFakePerson] = useState([]);
   useEffect(() => {
-    console.log('fakeDataJson');
-    console.log(fakeDataJson);
-    console.log('fakeDataJs');
-    console.log(fakeDataJs);
     setFakePerson(fakeDataJs);
   },[])
   const person = {
@@ -31,8 +27,6 @@ function App() {
     color: 'black'
   };
   const nayoks = ['a', 'b', 'c', 'd', 'e', 'f'];
-  const nayokNames = nayoks.map(nayok => nayok);
-  // console.log(nayokNames);
   const products = [
     {name: 'PhotoShop', price:"$100"},
     {name: 'Illustrator', price:"$70"},
