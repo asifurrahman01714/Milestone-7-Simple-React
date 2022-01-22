@@ -4,6 +4,7 @@ import { CountContext } from '../../App';
 
 const CategoryDetails = (props) => {
     const count = useContext(CountContext);
+    // Hence filtering data from context api has been done.
     const {name, category} = props.product;
     return (
         <div style={{border:'1px solid black'}}>
