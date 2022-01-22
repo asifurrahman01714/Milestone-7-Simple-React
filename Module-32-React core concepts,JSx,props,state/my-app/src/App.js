@@ -7,7 +7,7 @@ import Header from './components/Header/Header';
   // First import the context
   // Then Wrap child components in the Context Provider and supply the state value.
   // Now, all components in this tree will have access to the user Context.
-const UserContext = createContext();
+export const UserContext = createContext();
 
 function App() {
   const [count, setCount] = useState(0);
