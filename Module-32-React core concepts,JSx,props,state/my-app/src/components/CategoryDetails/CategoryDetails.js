@@ -1,9 +1,9 @@
 import React from 'react';
 
-const CategoryDetails = () => {
+const CategoryDetails = (props) => {
     return (
         <div>
-            <h1>Category Details</h1>
+            <h1>Category Details of :{props.count}</h1>
         </div>
     );
 };
