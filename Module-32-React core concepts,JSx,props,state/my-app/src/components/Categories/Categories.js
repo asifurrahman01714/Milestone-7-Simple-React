@@ -8,9 +8,9 @@ const Categories = () => {
     return (
         <div>
             <h1>Category  :{category}</h1>
-            <button>Laptop</button>
-            <button>Mobile</button>
-            <button>Camera</button>
+            <button onClick={()=> setCategory('Laptop')}>Laptop</button>
+            <button onClick={()=> setCategory('Mobile')}>Mobile</button>
+            <button onClick={()=> setCategory('Camera')}>Camera</button>
             <CategoryDetails />
         </div>
     );
