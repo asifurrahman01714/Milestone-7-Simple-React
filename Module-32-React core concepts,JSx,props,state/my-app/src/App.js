@@ -7,17 +7,17 @@ import Header from './components/Header/Header';
   // First import the context
   // Then Wrap child components in the Context Provider and supply the state value.
   // Now, all components in this tree will have access to the user Context.
-export const UserContext = createContext();
+export const CountContext = createContext();
 
 function App() {
   const [count, setCount] = useState(0);
   return (
-    <UserContext.Provider value='zero'>
+    <CountContext.Provider value={count}>
       <h1>This count is : {count}</h1>
       <Home />
       <Header/>
       <button onClick={()=> setCount(count+1)}>Increase the count</button>
-    </UserContext.Provider>
+    </CountContext.Provider>
   );
 }
 
