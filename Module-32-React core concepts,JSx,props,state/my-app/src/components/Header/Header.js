@@ -1,6 +1,7 @@
 import React from 'react';
 
-const Header = () => {
+const Header = (props) => {
+    const {count, setCount} = props;
     return (
         <div>
             <h1>This is header</h1>
