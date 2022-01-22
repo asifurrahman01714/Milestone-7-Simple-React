@@ -12,11 +12,10 @@ export const CountContext = createContext();
 function App() {
   const [count, setCount] = useState(0);
   return (
-    <CountContext.Provider value={count}>
+    <CountContext.Provider value={[count, setCount]}>
       <h1>This count is : {count}</h1>
       <Home />
       <Header/>
-      <button onClick={()=> setCount(count+1)}>Increase the count</button>
     </CountContext.Provider>
   );
 }
