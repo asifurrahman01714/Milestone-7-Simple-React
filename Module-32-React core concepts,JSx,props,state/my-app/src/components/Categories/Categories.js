@@ -18,8 +18,7 @@ const products = [
 ];
 const Categories = () => {
     const [category, setCategory] = useContext(CategoryContext);
-    const filteringProducts = products.filter(product => product.category === category);
-    console.log(filteringProducts);
+    const [newCategory, setNewCategory] = React.useState([]);
     return (
         <div>
             <h1>Category  :{category}</h1>
