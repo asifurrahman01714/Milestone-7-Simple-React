@@ -19,6 +19,9 @@ const products = [
 const Categories = () => {
     const [category, setCategory] = useContext(CategoryContext);
     const [newCategory, setNewCategory] = React.useState([]);
+    React.useEffect(()=>{
+        
+    },[])
     return (
         <div>
             <h1>Category  :{category}</h1>
