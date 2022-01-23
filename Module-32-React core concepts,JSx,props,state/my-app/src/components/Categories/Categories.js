@@ -27,12 +27,12 @@ const Categories = () => {
     return (
         <div>
             <h1>Category  :{category}</h1>
-            <h2>Total finding products :{filteringProducts.length}</h2>
+            <h2>Total finding products :{newCategory.length}</h2>
             <button onClick={()=> setCategory('Laptop')}>Laptop</button>
             <button onClick={()=> setCategory('Mobile')}>Mobile</button>
             <button onClick={()=> setCategory('Camera')}>Camera</button>
             {
-                filteringProducts.map(product => <CategoryDetails product={product}/>)
+                newCategory.map(product => <CategoryDetails product={product}/>)
             }
         </div>
     );
