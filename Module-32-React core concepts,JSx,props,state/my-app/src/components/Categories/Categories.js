@@ -19,8 +19,10 @@ const products = [
 const Categories = () => {
     const [category, setCategory] = useContext(CategoryContext);
     const [newCategory, setNewCategory] = React.useState([]);
-    React.useEffect(()=>{
-        
+    React.useEffect(()=>{   
+    const filteringProducts = products.filter(product => product.category === category);
+    console.log(filteringProducts);
+    setNewCategory(filteringProducts);
     },[])
     return (
         <div>
