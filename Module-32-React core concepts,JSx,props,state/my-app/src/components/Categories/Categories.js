@@ -2,23 +2,22 @@ import React from 'react';
 import { useContext } from 'react/cjs/react.development';
 import { CategoryContext } from '../../App';
 import CategoryDetails from '../CategoryDetails/CategoryDetails';
-
+const products = [
+    {name:'Asus', category:'Laptop'},
+    {name:'Dell', category:'Laptop'},
+    {name:'HP', category:'Laptop'},
+    {name:'Lenovo', category:'Laptop'},
+    {name:'Acer', category:'Laptop'},
+    {name:'Canon', category:'Camera'},
+    {name:'Nikon', category:'Camera'},
+    {name:'Sony', category:'Camera'},
+    {name:'Samsung', category:'Mobile'},
+    {name:'Apple', category:'Mobile'},
+    {name:'Huawei', category:'Mobile'},
+    {name:'Oppo', category:'Mobile'},
+];
 const Categories = () => {
     const [category, setCategory] = useContext(CategoryContext);
-    const products = [
-        {name:'Asus', category:'Laptop'},
-        {name:'Dell', category:'Laptop'},
-        {name:'HP', category:'Laptop'},
-        {name:'Lenovo', category:'Laptop'},
-        {name:'Acer', category:'Laptop'},
-        {name:'Canon', category:'Camera'},
-        {name:'Nikon', category:'Camera'},
-        {name:'Sony', category:'Camera'},
-        {name:'Samsung', category:'Mobile'},
-        {name:'Apple', category:'Mobile'},
-        {name:'Huawei', category:'Mobile'},
-        {name:'Oppo', category:'Mobile'},
-    ]
     const filteringProducts = products.filter(product => product.category === category);
     console.log(filteringProducts);
     return (
