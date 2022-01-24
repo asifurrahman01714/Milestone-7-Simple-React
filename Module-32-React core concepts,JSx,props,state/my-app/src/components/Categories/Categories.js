@@ -18,7 +18,7 @@ const products = [
 ];
 const Categories = () => {
     const [category, setCategory] = useContext(CategoryContext);
-    const [newCategory, setNewCategory] = React.useState([]);
+    const [newCategory, setNewCategory] = React.useState([]); // If anything is changed we have to useState..cause this hook maintain the change of anything
     const loadCategory =()=>{   
         const filteringProducts = products.filter(product => product.category === category);
         console.log(filteringProducts);
