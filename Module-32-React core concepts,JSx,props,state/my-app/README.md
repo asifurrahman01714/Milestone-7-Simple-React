@@ -81,20 +81,21 @@ Go through these sites:
 1. https://www.mockaroo.com/
 ```
 
+
+### Let's know the useState, useEffect, useHistory, and useParams hook in react.
 ### Working principle of useState
 ```bash
 1. useState(initialState)
 2. return [state, setState]
 
+Created by react.
 If anything is changed we have to use useState..cause this hook maintain the change of anything.
 ```
-
-### Let's know the useState, useEffect, useHistory, and useParams in react.
 ### Working principle of useEffect
 ```bash
 1. useEffect(() => {}, [])
 2. return () => {}
-
+Created by react.
 We have to use useEffect when theres need to load any data from the server or any local API.
 ```
 
@@ -102,6 +103,8 @@ We have to use useEffect when theres need to load any data from the server or an
 ```bash
 1. useHistory()
 2. return history
+
+Created by react router.
 This hook will help us to navigate between pages. 
 It will help us to go back and forward. 
 It will help us to go to any page. 
@@ -111,6 +114,7 @@ It will help us to go to any page.
 1. useParams()
 2. return params
 
+Created by react router.
 This hook will help us to get the params from the url.
 And using this hook we will able to get the dynamic parameters from the url.
 ```
