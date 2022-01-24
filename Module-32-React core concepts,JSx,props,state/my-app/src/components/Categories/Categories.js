@@ -19,11 +19,12 @@ const products = [
 const Categories = () => {
     const [category, setCategory] = useContext(CategoryContext);
     const [newCategory, setNewCategory] = React.useState([]);
-    React.useEffect(()=>{   
-    const filteringProducts = products.filter(product => product.category === category);
-    console.log(filteringProducts);
-    setNewCategory(filteringProducts);
-    },[category]) // that means this useEffect depends on category..When the category change the useEffect occurs.
+    const loadCategory =()=>{   
+        const filteringProducts = products.filter(product => product.category === category);
+        console.log(filteringProducts);
+        setNewCategory(filteringProducts);
+        }
+    React.useEffect(,[category]) // that means this useEffect depends on category..When the category change the useEffect occurs.
     return (
         <div>
             <h1>Category  :{category}</h1>
