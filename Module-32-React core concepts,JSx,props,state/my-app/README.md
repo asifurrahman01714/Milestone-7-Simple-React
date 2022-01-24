@@ -105,3 +105,11 @@ This hook will help us to navigate between pages.
 It will help us to go back and forward. 
 It will help us to go to any page. 
 ```
+### Working principle of useParams
+```bash
+1. useParams()
+2. return params
+
+This hook will help us to get the params from the url.
+And using this hook we will able to get the dynamic parameters from the url.
+```
