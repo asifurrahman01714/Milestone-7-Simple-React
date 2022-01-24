@@ -97,4 +97,11 @@ If anything is changed we have to use useState..cause this hook maintain the cha
 We have to use useEffect when theres need to load any data from the server or any local API.
 ```
 
-
+### Working principle of useHistory
+```bash
+1. useHistory()
+2. return history
+This hook will help us to navigate between pages. 
+It will help us to go back and forward. 
+It will help us to go to any page. 
+```
