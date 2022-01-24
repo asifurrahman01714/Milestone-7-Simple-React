@@ -24,6 +24,7 @@ const Categories = () => {
         console.log(filteringProducts);
         setNewCategory(filteringProducts);
         }
+    // So, useEffect is a call back function that call another function into it.
     React.useEffect(loadCategory,[category]) // that means this useEffect depends on category..When the category change the useEffect occurs.
     return (
         <div>
