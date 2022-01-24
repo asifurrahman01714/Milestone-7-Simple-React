@@ -24,7 +24,7 @@ const Categories = () => {
         console.log(filteringProducts);
         setNewCategory(filteringProducts);
         }
-    React.useEffect(,[category]) // that means this useEffect depends on category..When the category change the useEffect occurs.
+    React.useEffect(loadCategory,[category]) // that means this useEffect depends on category..When the category change the useEffect occurs.
     return (
         <div>
             <h1>Category  :{category}</h1>
