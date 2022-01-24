@@ -81,4 +81,12 @@ Go through these sites:
 1. https://www.mockaroo.com/
 ```
 
+### Working principle of useState
+```bash
+1. useState(initialState)
+2. return [state, setState]
+
+If anything is changed we have to use useState..cause this hook maintain the change of anything.
+```
+
 
