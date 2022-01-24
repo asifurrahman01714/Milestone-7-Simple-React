@@ -89,4 +89,12 @@ Go through these sites:
 If anything is changed we have to use useState..cause this hook maintain the change of anything.
 ```
 
+### Working principle of useEffect
+```bash
+1. useEffect(() => {}, [])
+2. return () => {}
+
+We have to use useEffect when theres need to load any data from the server or any local API.
+```
+
 
