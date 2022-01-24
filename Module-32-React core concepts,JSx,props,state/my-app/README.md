@@ -89,6 +89,7 @@ Go through these sites:
 If anything is changed we have to use useState..cause this hook maintain the change of anything.
 ```
 
+### Let's know the useState, useEffect, useHistory, and useParams in react.
 ### Working principle of useEffect
 ```bash
 1. useEffect(() => {}, [])
