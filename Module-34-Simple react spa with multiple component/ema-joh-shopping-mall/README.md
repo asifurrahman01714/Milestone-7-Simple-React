@@ -50,4 +50,3 @@ const ProductDetails = () => {
 ```
 
 ### Use React developer chrome extension
-No work today
