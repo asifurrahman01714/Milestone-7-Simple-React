@@ -57,7 +57,7 @@ const Review = () => {
             </div>
             <div className="col-md-4">
                 <Cart cart={cart} review={true}>
-                    <button style={buttonStyle} onClick={handlePlaceOrder}>Place Order</button>
+                    <button style={buttonStyle} onClick={handlePlaceOrder}>Proceed Checkout</button>
                 </Cart>
             </div>
         </div>
