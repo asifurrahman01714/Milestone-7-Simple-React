@@ -7,6 +7,7 @@ import fakeData from '../../fakeData';
 import ReviewItem from '../ReviewItem/ReviewItem';
 import Cart from '../Cart/Cart';
 import thankYouImage from '../../images/giphy.gif';
+import { Link } from "react-router-dom";
 
 const Review = () => {
     const [cart, setCart] = useState([]);
@@ -57,7 +58,8 @@ const Review = () => {
             </div>
             <div className="col-md-4">
                 <Cart cart={cart} review={true}>
-                    <button style={buttonStyle} onClick={handlePlaceOrder}>Proceed Checkout</button>
+                    {/* <button style={buttonStyle} onClick={handlePlaceOrder}>Proceed Checkout</button> */}
+                    <Link style={buttonStyle} to="/shipment">Proceed Checkout</Link>
                 </Cart>
             </div>
         </div>
