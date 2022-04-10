@@ -7,6 +7,8 @@ import {
   Route
 } from "react-router-dom";
 import Review from "./components/Review/Review";
+import Login from "./components/Login/Login";
+import Shipment from "./components/Shipment/Shipment";
 import Inventory from "./components/Inventory/Inventory";
 import NoMatch from "./components/NoMatch/NoMatch";
 import ProductDetails from "./components/ProductDetails/ProductDetails";
@@ -32,6 +34,15 @@ function App() {
           <Route path="/inventory">
             <Inventory />
           </Route>
+
+          <Route path="/login">
+            <Login />
+          </Route>
+
+          <Route path="/shipment">
+            <Shipment />
+          </Route>
+
 
           <Route path="/product/:productId"> {/* This productId is dynamically passed through ProductDetails component */}
             <ProductDetails/>
