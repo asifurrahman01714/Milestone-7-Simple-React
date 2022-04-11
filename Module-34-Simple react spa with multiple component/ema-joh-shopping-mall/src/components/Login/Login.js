@@ -28,7 +28,7 @@ const Login = () => {
     return (
         <div>
             {
-                user.email && <h1>You are logged In : {user.displayName}</h1>
+                user.email && <h1>You are logged In as {user.displayName}</h1>
             }
             <button onClick={handleGoogleSignIn}>Sign In With Google</button>
         </div>
