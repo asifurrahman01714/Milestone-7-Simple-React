@@ -1,7 +1,10 @@
 import React from 'react';
+import { initializeApp } from 'firebase/app';
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { useState } from 'react/cjs/react.development';
+import {firebaseConfig} from './firebase.config';
 
+const app = initializeApp(firebaseConfig);
 const googleProvider = new GoogleAuthProvider();
 const auth = getAuth();
 
@@ -18,9 +21,8 @@ const Login = () => {
         }).catch((error) => {
             const errorCode = error.code;
             const errorMessage = error.message;
-            const email = error.email;
             const credential = GoogleAuthProvider.credentialFromError(error);
-            console.log(errorCode, errorMessage, credential);
+            console.log(errorCode, errorMessage);
         });
     }
     return (
