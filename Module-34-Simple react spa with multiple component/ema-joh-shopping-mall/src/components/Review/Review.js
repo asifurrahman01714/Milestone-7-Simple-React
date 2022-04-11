@@ -1,5 +1,5 @@
 import React from 'react';
-import { useEffect, useState } from 'react/cjs/react.development';
+import {useEffect, useState } from 'react/cjs/react.development';
 import {getDatabaseCart} from '../../utilities/fakedb';
 import {removeFromDatabaseCart} from '../../utilities/fakedb';
 import {processOrder} from '../../utilities/fakedb';
@@ -13,7 +13,6 @@ const Review = () => {
     const [cart, setCart] = useState([]);
     const [orderPlaced, setOrderPlaced] = useState(false);
     let history = useHistory();
-
     const handleProceedCheckOut = () => {
         /* Previous code
         console.log('place order');
