@@ -12,6 +12,7 @@ import Shipment from "./components/Shipment/Shipment";
 import Inventory from "./components/Inventory/Inventory";
 import NoMatch from "./components/NoMatch/NoMatch";
 import ProductDetails from "./components/ProductDetails/ProductDetails";
+import AuthExample from "./components/Example/Example";
 
 function App() {
   return (
@@ -25,6 +26,10 @@ function App() {
 
           <Route path="/shop">
             <Shop />
+          </Route>
+
+          <Route path="/example">
+            <AuthExample />
           </Route>
 
           <Route path="/review">
