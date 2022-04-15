@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "./components/Header/Header";
 import Shop from "./components/Shop/Shop";
 import {
@@ -18,8 +18,9 @@ import { createContext } from "react/cjs/react.development";
 export const UserContext = createContext({});
 
 function App() {
+  const [loggedInUser, setLoggedInUser] = useState({});
   return (
-    <div>
+    <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
       <Header />
       <Router>
         <Switch>
@@ -61,7 +62,7 @@ function App() {
           </Route>
         </Switch>
       </Router>
-    </div>
+    </UserContext.Provider>
   );
 }
 
