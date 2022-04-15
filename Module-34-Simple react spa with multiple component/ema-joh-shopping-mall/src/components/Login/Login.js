@@ -18,6 +18,7 @@ const Login = () => {
             const token = credential.accessToken;
             const user = result.user;
             setUser(user);
+            setLoggedInUser(user);
             console.log(user)
         }).catch((error) => {
             const errorCode = error.code;
