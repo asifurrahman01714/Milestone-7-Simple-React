@@ -14,6 +14,7 @@ import NoMatch from "./components/NoMatch/NoMatch";
 import ProductDetails from "./components/ProductDetails/ProductDetails";
 import AuthExample from "./components/Example/Example";
 import { createContext } from "react/cjs/react.development";
+import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 
 export const UserContext = createContext({});
 
@@ -49,9 +50,9 @@ function App() {
             <Login />
           </Route>
 
-          <Route path="/shipment">
+          <PrivateRoute path="/shipment">
             <Shipment />
-          </Route>
+          </PrivateRoute>
 
 
           <Route path="/product/:productId"> {/* This productId is dynamically passed through ProductDetails component */}
