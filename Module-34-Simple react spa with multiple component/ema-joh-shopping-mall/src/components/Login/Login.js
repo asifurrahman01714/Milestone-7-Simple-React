@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { initializeApp } from 'firebase/app';
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { useState } from 'react/cjs/react.development';
@@ -10,6 +10,7 @@ const auth = getAuth();
 
 const Login = () => {
     const [user, setUser] = useState({});
+    const [loggedInUser, setLoggedInUser] = useContext({});
     const handleGoogleSignIn = () =>{
         signInWithPopup(auth, googleProvider)
         .then((result) => {
