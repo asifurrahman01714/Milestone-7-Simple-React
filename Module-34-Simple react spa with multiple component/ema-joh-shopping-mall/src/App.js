@@ -13,6 +13,9 @@ import Inventory from "./components/Inventory/Inventory";
 import NoMatch from "./components/NoMatch/NoMatch";
 import ProductDetails from "./components/ProductDetails/ProductDetails";
 import AuthExample from "./components/Example/Example";
+import { createContext } from "react/cjs/react.development";
+
+export const UserContext = createContext({});
 
 function App() {
   return (
