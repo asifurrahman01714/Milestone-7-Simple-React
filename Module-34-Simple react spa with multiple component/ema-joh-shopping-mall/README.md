@@ -66,6 +66,14 @@ setLoggedInUser(UserContext);
 
 ### Private Route
 ```bash
+
+### In App.js
+<PrivateRoute path="/shipment">
+            <Shipment />
+</PrivateRoute>
+
+
+### In PrivateRoute Component
 function PrivateRoute({ children, ...rest }) {
   let auth = useAuth();
   return (
