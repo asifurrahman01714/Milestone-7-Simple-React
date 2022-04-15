@@ -50,3 +50,15 @@ const ProductDetails = () => {
 ```
 
 ### Use React developer chrome extension
+
+### Context API
+```bash
+### In main App.js file
+export const UserContext = createContext({});
+const [loggedInUser, setLoggedInUser] = useState({});
+<UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
+
+### In login file
+const [loggedInUser, setLoggedInUser] = useContext(UserContext);
+setLoggedInUser(UserContext);
+```
