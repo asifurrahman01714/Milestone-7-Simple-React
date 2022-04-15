@@ -42,9 +42,9 @@ function App() {
             <Review />
           </Route>
 
-          <Route path="/inventory">
+          <PrivateRoute path="/inventory">
             <Inventory />
-          </Route>
+          </PrivateRoute>
 
           <Route path="/login">
             <Login />
